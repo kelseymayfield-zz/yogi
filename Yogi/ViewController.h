@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Posture.h"
+#import "InstructionReader.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
 
-
+@property (strong, nonatomic) NSArray *practiceInfo;
 @end
 

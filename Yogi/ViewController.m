@@ -9,19 +9,118 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *postureView;
+@property (weak, nonatomic) IBOutlet UILabel *postureLabel;
+@property (strong, nonatomic) NSArray *flow;
+@property (nonatomic) NSInteger idx;
+@property (nonatomic) NSInteger breathsLeft;
+@property (strong, nonatomic) InstructionReader *instructionReader;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+	_idx = 0, _breathsLeft = 0;
+	Posture *p = self.flow[_idx];
+
+	[_postureView setImage:p.image];
+	[_postureView.layer setMasksToBounds:YES];
+	[_postureView.layer setCornerRadius:10.0];
+	_postureLabel.text = p.name;
+	[self.instructionReader addInstruction:p.instructions];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI) name:@"FinishedSpeechNotification" object:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+- (void)updateUI
+{
+	if (_breathsLeft > 0)
+		_breathsLeft--;
+	else {
+		_idx++;
+		if (_idx < [self.flow count]) {
+	//		NSLog(@"%f", _postureView.layer.cornerRadius);
+			Posture *p = self.flow[_idx];
+			_postureLabel.text = p.name;
+			if (!p.numBreaths) {
+				[self.instructionReader addInstruction:p.instructions];
+				_breathsLeft = 0;
+			}
+			else {
+				[self.instructionReader addInstruction:p.instructions withBreaths:p.numBreaths];
+				_breathsLeft = p.numBreaths*2;
+			}
+
+			if (![p.image isEqual:_postureView.image]) {
+				_postureView.image = p.image;
+
+				CATransition *transition = [CATransition animation];
+				transition.startProgress = 0;
+				transition.endProgress = 1.0;
+				transition.type = kCATransitionPush;
+				transition.subtype = kCATransitionFromRight;
+				transition.duration = 0.3;
+
+				[_postureView.layer addAnimation:transition forKey:@"transition"];
+			}
+		}
+		
+	}
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	[super viewWillDisappear:animated];
+}
+
+- (NSArray *)flow
+{
+	if (!_flow) {
+//		NSError *error;
+//		NSError *urlError;
+//		NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"sun salutation a" ofType:@"json"];
+//		
+		NSMutableArray *array = [NSMutableArray new];
+		for (NSDictionary *d in self.practiceInfo) {
+			Posture *p = [[Posture alloc] initWithName:d[@"name"] imageName:d[@"image"] instructions:d[@"instructions"]];
+			NSInteger breaths = [d[@"breaths"] integerValue];
+			if (breaths)
+				p.numBreaths = breaths;
+			[array addObject:p];
+		}
+//
+//		NSData *contents = [NSData dataWithContentsOfFile:jsonPath];
+//		if (!urlError) {
+//			id object = [NSJSONSerialization JSONObjectWithData:contents options:NSJSONReadingAllowFragments error:&error];
+//			if (!error) {
+////				NSLog(@"%@", object);
+//				for (NSDictionary *d in object) {
+//					Posture *p = [[Posture alloc] initWithName:d[@"name"] imageName:d[@"image"] instructions:d[@"instructions"]];
+//					NSInteger breaths = [d[@"breaths"] integerValue];
+//					if (breaths)
+//						p.numBreaths = breaths;
+//					[array addObject:p];
+//				}
+//			}
+//			else
+//				NSLog(@"%@", error.localizedDescription);
+//		} else {
+//			NSLog(@"%@", urlError.localizedDescription);
+//		}
+		
+		_flow = [NSArray arrayWithArray:array];
+	}
+	return _flow;
+}
+
+- (InstructionReader *)instructionReader
+{
+	if (!_instructionReader) {
+		_instructionReader = [[InstructionReader alloc] init];
+	}
+	return _instructionReader;
 }
 
 @end

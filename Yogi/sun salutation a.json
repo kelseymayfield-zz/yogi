@@ -1,0 +1,58 @@
+[
+ {
+	"name": "Tadasana",
+	"image": "tadasana",
+	"instructions": "Start at the top of your mat with your hands at your sides."
+ },
+ {
+	"name": "Urdhva Vrikshasana",
+	"image": "urdhva vrikshasana",
+	"instructions": "Breathe in, and raise your arms above your head."
+ },
+ {
+	"name": "Uttanasana A",
+	"image": "uttanasana a",
+	"instructions": "Exhale, fold forward, and bring your hands to the floor."
+ },
+ {
+	"name": "Uttanasana B",
+	"image": "uttanasana b",
+	"instructions": "Inhale, ground your hands and look halfway up."
+ },
+ {
+	"name": "Chaturanga Dandasana",
+	"image": "chaturanga",
+	"instructions": "Exhale, plant your hands, float back, elbows close to sides, lower halfway down."
+ },
+ {
+	"name": "Urdhva Mukha Shvanasana",
+	"image": "updog",
+	"instructions": "Inhale, straighten your arms, open your chest, upward facing dog."
+ },
+ {
+	"name": "Adho Mukha Shvanasana",
+	"image": "downward facing dog",
+	"instructions": "Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.",
+	"breaths": 5
+ },
+ {
+	"name": "Uttanasana B",
+	"image": "uttanasana b",
+	"instructions": "Inhale, come to the front of your mat, and look halfway up with a flat back."
+ },
+ {
+	"name": "Uttanasana A",
+	"image": "uttanasana a",
+	"instructions": "Exhale, fold forward, bringing your head to your knees."
+ },
+ {
+	"name": "Urdhva Vrikshasana",
+	"image": "urdhva vrikshasana",
+	"instructions": "Inhale, rise up, bringing your arms overhead."
+ },
+ {
+	"name": "Tadasana",
+	"image": "tadasana",
+	"instructions": "Exhale, bring your hands to heart's center."
+ }
+]

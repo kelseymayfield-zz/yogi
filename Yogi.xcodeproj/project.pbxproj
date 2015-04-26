@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F019424E1AD87C3D003CF715 /* Posture.m in Sources */ = {isa = PBXBuildFile; fileRef = F019424D1AD87C3D003CF715 /* Posture.m */; };
+		F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */ = {isa = PBXBuildFile; fileRef = F02EC6781ADB3927005A24C2 /* sun salutation a.json */; };
+		F07B1A9B1AED99D700CAD89C /* FlowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1A9A1AED99D700CAD89C /* FlowCollectionViewController.m */; };
+		F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08DE3E51AE7F93D001B8320 /* Label Colors.plist */; };
+		F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */; };
+		F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */; };
+		F09026861AE0636D00F92889 /* PracticeCVLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026851AE0636D00F92889 /* PracticeCVLayout.m */; };
+		F09026891AE0B04900F92889 /* PracticeCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026881AE0B04900F92889 /* PracticeCVDataSource.m */; };
+		F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */ = {isa = PBXBuildFile; fileRef = F090268A1AE46D0E00F92889 /* sun salutation b.json */; };
 		F0ED8B011AD8643100898BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B001AD8643100898BFE /* main.m */; };
 		F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B031AD8643100898BFE /* AppDelegate.m */; };
 		F0ED8B071AD8643100898BFE /* Yogi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B051AD8643100898BFE /* Yogi.xcdatamodeld */; };
@@ -15,6 +24,7 @@
 		F0ED8B0F1AD8643100898BFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ED8B0E1AD8643100898BFE /* Images.xcassets */; };
 		F0ED8B121AD8643100898BFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED8B101AD8643100898BFE /* LaunchScreen.xib */; };
 		F0ED8B1E1AD8643100898BFE /* YogiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B1D1AD8643100898BFE /* YogiTests.m */; };
+		F0ED8B291AD8647000898BFE /* InstructionReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B281AD8647000898BFE /* InstructionReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +38,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F019424C1AD87BF0003CF715 /* Posture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Posture.h; sourceTree = "<group>"; };
+		F019424D1AD87C3D003CF715 /* Posture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Posture.m; sourceTree = "<group>"; };
+		F02EC6781ADB3927005A24C2 /* sun salutation a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sun salutation a.json"; sourceTree = "<group>"; };
+		F07B1A991AED99D700CAD89C /* FlowCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCollectionViewController.h; sourceTree = "<group>"; };
+		F07B1A9A1AED99D700CAD89C /* FlowCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCollectionViewController.m; sourceTree = "<group>"; };
+		F08DE3E51AE7F93D001B8320 /* Label Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Label Colors.plist"; sourceTree = "<group>"; };
+		F090267E1AE05CBA00F92889 /* PracticeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PracticeCollectionViewController.h; path = ../PracticeCollectionViewController.h; sourceTree = "<group>"; };
+		F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PracticeCollectionViewController.m; path = ../PracticeCollectionViewController.m; sourceTree = "<group>"; };
+		F09026811AE0612300F92889 /* PracticeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeCollectionViewCell.h; sourceTree = "<group>"; };
+		F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeCollectionViewCell.m; sourceTree = "<group>"; };
+		F09026841AE0636D00F92889 /* PracticeCVLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeCVLayout.h; sourceTree = "<group>"; };
+		F09026851AE0636D00F92889 /* PracticeCVLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeCVLayout.m; sourceTree = "<group>"; };
+		F09026871AE0B04900F92889 /* PracticeCVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeCVDataSource.h; sourceTree = "<group>"; };
+		F09026881AE0B04900F92889 /* PracticeCVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeCVDataSource.m; sourceTree = "<group>"; };
+		F090268A1AE46D0E00F92889 /* sun salutation b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sun salutation b.json"; sourceTree = "<group>"; };
 		F0ED8AFB1AD8643100898BFE /* Yogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8AFF1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B001AD8643100898BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +67,8 @@
 		F0ED8B171AD8643100898BFE /* YogiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YogiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8B1C1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B1D1AD8643100898BFE /* YogiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogiTests.m; sourceTree = "<group>"; };
+		F0ED8B271AD8645300898BFE /* InstructionReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InstructionReader.h; path = ../InstructionReader.h; sourceTree = "<group>"; };
+		F0ED8B281AD8647000898BFE /* InstructionReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F090268C1AE470B300F92889 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F090268A1AE46D0E00F92889 /* sun salutation b.json */,
+				F02EC6781ADB3927005A24C2 /* sun salutation a.json */,
+				F08DE3E51AE7F93D001B8320 /* Label Colors.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F0ED8AF21AD8643100898BFE = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +120,26 @@
 		F0ED8AFD1AD8643100898BFE /* Yogi */ = {
 			isa = PBXGroup;
 			children = (
+				F090267E1AE05CBA00F92889 /* PracticeCollectionViewController.h */,
+				F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */,
+				F090268C1AE470B300F92889 /* Resources */,
+				F0ED8B271AD8645300898BFE /* InstructionReader.h */,
+				F0ED8B281AD8647000898BFE /* InstructionReader.m */,
 				F0ED8B021AD8643100898BFE /* AppDelegate.h */,
 				F0ED8B031AD8643100898BFE /* AppDelegate.m */,
 				F0ED8B081AD8643100898BFE /* ViewController.h */,
 				F0ED8B091AD8643100898BFE /* ViewController.m */,
+				F019424C1AD87BF0003CF715 /* Posture.h */,
+				F019424D1AD87C3D003CF715 /* Posture.m */,
 				F0ED8B0B1AD8643100898BFE /* Main.storyboard */,
+				F09026811AE0612300F92889 /* PracticeCollectionViewCell.h */,
+				F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */,
+				F07B1A991AED99D700CAD89C /* FlowCollectionViewController.h */,
+				F07B1A9A1AED99D700CAD89C /* FlowCollectionViewController.m */,
+				F09026841AE0636D00F92889 /* PracticeCVLayout.h */,
+				F09026851AE0636D00F92889 /* PracticeCVLayout.m */,
+				F09026871AE0B04900F92889 /* PracticeCVDataSource.h */,
+				F09026881AE0B04900F92889 /* PracticeCVDataSource.m */,
 				F0ED8B0E1AD8643100898BFE /* Images.xcassets */,
 				F0ED8B101AD8643100898BFE /* LaunchScreen.xib */,
 				F0ED8B051AD8643100898BFE /* Yogi.xcdatamodeld */,
@@ -202,8 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
+				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
 				F0ED8B121AD8643100898BFE /* LaunchScreen.xib in Resources */,
+				F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */,
 				F0ED8B0F1AD8643100898BFE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,8 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09026891AE0B04900F92889 /* PracticeCVDataSource.m in Sources */,
+				F019424E1AD87C3D003CF715 /* Posture.m in Sources */,
+				F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */,
 				F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */,
+				F07B1A9B1AED99D700CAD89C /* FlowCollectionViewController.m in Sources */,
+				F09026861AE0636D00F92889 /* PracticeCVLayout.m in Sources */,
+				F0ED8B291AD8647000898BFE /* InstructionReader.m in Sources */,
 				F0ED8B071AD8643100898BFE /* Yogi.xcdatamodeld in Sources */,
+				F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */,
 				F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */,
 				F0ED8B011AD8643100898BFE /* main.m in Sources */,
 			);
@@ -422,6 +484,7 @@
 				F0ED8B231AD8643100898BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0ED8B241AD8643100898BFE /* Build configuration list for PBXNativeTarget "YogiTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +493,7 @@
 				F0ED8B261AD8643100898BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
