@@ -11,6 +11,8 @@
 		F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */ = {isa = PBXBuildFile; fileRef = F02EC6781ADB3927005A24C2 /* sun salutation a.json */; };
 		F07B1AA31AEDA0B700CAD89C /* FlowCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1AA21AEDA0B700CAD89C /* FlowCVDataSource.m */; };
 		F07B1AA61AEDA38D00CAD89C /* FlowCVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1AA51AEDA38D00CAD89C /* FlowCVDelegate.m */; };
+		F083C8CC1AEEDA92002F3510 /* FlowCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */; };
+		F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */; };
 		F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08DE3E51AE7F93D001B8320 /* Label Colors.plist */; };
 		F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */; };
 		F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */; };
@@ -45,6 +47,9 @@
 		F07B1AA21AEDA0B700CAD89C /* FlowCVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCVDataSource.m; sourceTree = "<group>"; };
 		F07B1AA41AEDA38D00CAD89C /* FlowCVDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCVDelegate.h; sourceTree = "<group>"; };
 		F07B1AA51AEDA38D00CAD89C /* FlowCVDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCVDelegate.m; sourceTree = "<group>"; };
+		F083C8CA1AEEDA92002F3510 /* FlowCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCVCell.h; sourceTree = "<group>"; };
+		F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCVCell.m; sourceTree = "<group>"; };
+		F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation a.plist"; sourceTree = "<group>"; };
 		F08DE3E51AE7F93D001B8320 /* Label Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Label Colors.plist"; sourceTree = "<group>"; };
 		F090267E1AE05CBA00F92889 /* PracticeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PracticeCollectionViewController.h; path = ../PracticeCollectionViewController.h; sourceTree = "<group>"; };
 		F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PracticeCollectionViewController.m; path = ../PracticeCollectionViewController.m; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 			children = (
 				F090268A1AE46D0E00F92889 /* sun salutation b.json */,
 				F02EC6781ADB3927005A24C2 /* sun salutation a.json */,
+				F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */,
 				F08DE3E51AE7F93D001B8320 /* Label Colors.plist */,
 			);
 			name = Resources;
@@ -149,6 +155,8 @@
 				F09026881AE0B04900F92889 /* PracticeCVDataSource.m */,
 				F07B1AA11AEDA0B700CAD89C /* FlowCVDataSource.h */,
 				F07B1AA21AEDA0B700CAD89C /* FlowCVDataSource.m */,
+				F083C8CA1AEEDA92002F3510 /* FlowCVCell.h */,
+				F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */,
 				F07B1AA41AEDA38D00CAD89C /* FlowCVDelegate.h */,
 				F07B1AA51AEDA38D00CAD89C /* FlowCVDelegate.m */,
 				F0ED8B0E1AD8643100898BFE /* Images.xcassets */,
@@ -264,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */,
 				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
 				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
@@ -295,6 +304,7 @@
 				F07B1AA31AEDA0B700CAD89C /* FlowCVDataSource.m in Sources */,
 				F0ED8B291AD8647000898BFE /* InstructionReader.m in Sources */,
 				F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */,
+				F083C8CC1AEEDA92002F3510 /* FlowCVCell.m in Sources */,
 				F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */,
 				F0ED8B011AD8643100898BFE /* main.m in Sources */,
 				F07B1AA61AEDA38D00CAD89C /* FlowCVDelegate.m in Sources */,

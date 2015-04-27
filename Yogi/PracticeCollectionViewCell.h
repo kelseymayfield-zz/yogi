@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FlowCVDataSource.h"
 #import "FlowCVDelegate.h"
+#import "FlowCVCell.h"
 
 @interface PracticeCollectionViewCell : UICollectionViewCell
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color;

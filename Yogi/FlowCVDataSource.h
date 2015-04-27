@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FlowCVCell.h"
 @import UIKit;
 @import QuartzCore;
 

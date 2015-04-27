@@ -29,20 +29,32 @@
 	return [self.postures count];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (FlowCVCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];
+	FlowCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];
 	
+	NSDictionary *dict = self.postures[indexPath.row];
+	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
+	cell.layer.cornerRadius = 5;
+	cell.clipsToBounds = YES;
+	return cell;
+	
+}
+
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//	UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];
+//	
 //	NSDictionary *dict = self.postures[indexPath.row];
 //	UIImageView *imageView = [[UIImageView alloc] initWithFrame:cell.frame];
 //	imageView.image = [UIImage imageNamed:dict[@"image"]];
 //	
 //	[cell addSubview:imageView];
-	cell.backgroundColor = [UIColor greenColor];
-	
+////	cell.backgroundColor = [UIColor greenColor];
+//	
 //	cell.layer.cornerRadius = 5;
 //	cell.clipsToBounds = YES;
-	return cell;
-}
+//	return cell;
+//}
 
 @end

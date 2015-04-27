@@ -118,7 +118,9 @@
 	
 	cell.flowView.delegate = cell.flowDelegate;
 	cell.flowView.dataSource = cell.flowDataSource;
-	cell.flowView.backgroundColor = [UIColor redColor];
+	cell.flowView.backgroundColor = [UIColor lightGrayColor];
+	
+	[cell.flowView reloadData];
 	
 	return cell;
 }

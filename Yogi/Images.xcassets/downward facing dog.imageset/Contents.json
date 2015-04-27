@@ -4,6 +4,16 @@
       "idiom" : "universal",
       "scale" : "1x",
       "filename" : "downward facing dog.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "downward facing dog@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "downward facing dog@3x.png"
     }
   ],
   "info" : {

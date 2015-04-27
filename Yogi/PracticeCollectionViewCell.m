@@ -90,36 +90,6 @@
 - (void)addFlows:(NSArray *)flows
 {
 	_flows = flows;
-//	CGRect frame = CGRectMake(0, 0, self.practiceView.bounds.size.width, self.practiceView.bounds.size.height - 100);
-//	NSLog(@"make layout");
-//	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-//	NSLog(@"make flow view");
-//
-//	self.flowView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
-//	NSLog(@"make data source and delegate");
-//
-////	FlowCVDataSource *dataSource = [[FlowCVDataSource alloc] initWithPostures:flows];
-//	FlowCVDataSource *dataSource = [[FlowCVDataSource alloc] init];
-//	FlowCVDelegate *delegate = [[FlowCVDelegate alloc] init];
-//	
-//	NSLog(@"set datasource and delegate");
-//
-//	self.flowView.dataSource = dataSource;
-//	self.flowView.delegate = delegate;
-//	[self.flowView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Posture Cell"];
-//	self.flowView.backgroundColor = [UIColor greenColor];
-//	NSLog(@"add subview");
-//	[self.practiceView addSubview:self.flowView];
-//	NSLog(@"done");
-//	UITextView *textView = [[UITextView alloc] initWithFrame:frame textContainer:nil];
-//	textView.backgroundColor = self.practiceView.backgroundColor;
-//	NSString *string = @"";
-//	for (NSDictionary *d in flows) {
-//		NSString *flow = d[@"name"];
-//		string = [string stringByAppendingString:[NSString stringWithFormat:@"%@\n", flow]];
-//	}
-//	textView.text = string;
-//	[self.practiceView addSubview:textView];
 }
 
 + (NSString *)reuseIdentifier
@@ -133,7 +103,9 @@
 		CGRect frame = CGRectMake(0, 0, self.practiceView.bounds.size.width, self.practiceView.bounds.size.height - 100);
 		UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
 		_flowView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
-		[_flowView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Posture Cell"];
+		[_flowView registerClass:[FlowCVCell class] forCellWithReuseIdentifier:@"Posture Cell"];
+		_flowView.layer.cornerRadius = 10.0;
+		[_flowView setClipsToBounds:YES];
 	}
 	return _flowView;
 }
