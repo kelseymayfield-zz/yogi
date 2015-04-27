@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>Start at the top of your mat with your hands at your sides.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>urdhva vrikshasana</string>
+		<key>instructions</key>
+		<string>Breathe in, and raise your arms above your head.</string>
+		<key>name</key>
+		<string>Urdhva Vrikshasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, fold forward, and bring your hands to the floor.</string>
+		<key>name</key>
+		<string>Uttanasana A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, ground your hands and look halfway up.</string>
+		<key>name</key>
+		<string>Uttanasana B</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>breaths</key>
+		<integer>5</integer>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, come to the front of your mat, and look halfway up with a flat back.</string>
+		<key>name</key>
+		<string>Uttanasana B</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, fold forward, bringing your head to your knees.</string>
+		<key>name</key>
+		<string>Uttanasana A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>urdhva vrikshasana</string>
+		<key>instructions</key>
+		<string>Inhale, rise up, bringing your arms overhead.</string>
+		<key>name</key>
+		<string>Urdhva Vrikshasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>Exhale, bring your hands to heart's center.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+</array>
 </plist>

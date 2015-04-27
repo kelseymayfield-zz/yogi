@@ -13,6 +13,7 @@
 		F07B1AA61AEDA38D00CAD89C /* FlowCVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1AA51AEDA38D00CAD89C /* FlowCVDelegate.m */; };
 		F083C8CC1AEEDA92002F3510 /* FlowCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */; };
 		F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */; };
+		F083C8D01AEEDEC8002F3510 /* sun salutation b.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */; };
 		F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08DE3E51AE7F93D001B8320 /* Label Colors.plist */; };
 		F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */; };
 		F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */; };
@@ -50,6 +51,7 @@
 		F083C8CA1AEEDA92002F3510 /* FlowCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCVCell.h; sourceTree = "<group>"; };
 		F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCVCell.m; sourceTree = "<group>"; };
 		F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation a.plist"; sourceTree = "<group>"; };
+		F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation b.plist"; sourceTree = "<group>"; };
 		F08DE3E51AE7F93D001B8320 /* Label Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Label Colors.plist"; sourceTree = "<group>"; };
 		F090267E1AE05CBA00F92889 /* PracticeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PracticeCollectionViewController.h; path = ../PracticeCollectionViewController.h; sourceTree = "<group>"; };
 		F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PracticeCollectionViewController.m; path = ../PracticeCollectionViewController.m; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		F090268C1AE470B300F92889 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */,
 				F090268A1AE46D0E00F92889 /* sun salutation b.json */,
 				F02EC6781ADB3927005A24C2 /* sun salutation a.json */,
 				F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */,
@@ -276,6 +279,7 @@
 				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
 				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
+				F083C8D01AEEDEC8002F3510 /* sun salutation b.plist in Resources */,
 				F0ED8B121AD8643100898BFE /* LaunchScreen.xib in Resources */,
 				F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */,
 				F0ED8B0F1AD8643100898BFE /* Images.xcassets in Resources */,
