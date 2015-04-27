@@ -55,7 +55,6 @@
 - (void)receiveStartPracticeNotification:(NSNotification *)notification
 {
 	if ([[notification name] isEqualToString:@"Start Practice Notification"]) {
-		NSLog(@"Success");
 		[self performSegueWithIdentifier:@"startPractice" sender:[notification object]];
 	}
 }

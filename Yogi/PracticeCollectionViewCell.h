@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlowCVDataSource.h"
+#import "FlowCVDelegate.h"
 
 @interface PracticeCollectionViewCell : UICollectionViewCell
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color;
@@ -15,4 +17,9 @@
 @property (strong, nonatomic) UIView *practiceView;
 @property (nonatomic) BOOL hasLabel;
 @property (readonly, nonatomic) NSArray *flows;
+@property (strong, nonatomic) UICollectionView *flowView;
+@property (strong, nonatomic) FlowCVDataSource *flowDataSource;
+@property (strong, nonatomic) FlowCVDelegate *flowDelegate;
+
+#define POSTURE_CELL @"Posture Cell"
 @end

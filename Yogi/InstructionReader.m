@@ -37,10 +37,10 @@
 
 -(void)readNextInstruction
 {
-	NSLog(@"Read next instruction.");
+//	NSLog(@"Read next instruction.");
 	NSString *instruction = self.nextInstructions[0];
 	if (instruction) {
-		NSLog(@"reading");
+//		NSLog(@"reading");
 		[self.nextInstructions removeObjectAtIndex:0];
 		AVSpeechUtterance *ut = [AVSpeechUtterance speechUtteranceWithString:instruction];
 		ut.rate = 0.15;

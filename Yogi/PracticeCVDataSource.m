@@ -116,6 +116,10 @@
 		[cell setLabel:@"New Practice" withColor:[UIColor grayColor]];
 	}
 	
+	cell.flowView.delegate = cell.flowDelegate;
+	cell.flowView.dataSource = cell.flowDataSource;
+	cell.flowView.backgroundColor = [UIColor redColor];
+	
 	return cell;
 }
 
@@ -134,7 +138,6 @@
 		if (!urlError) {
 			id object = [NSJSONSerialization JSONObjectWithData:contents options:NSJSONReadingAllowFragments error:&error];
 			if (!error) {
-				NSLog(@"%@", object);
 				for (NSDictionary *d in object) {
 					[flows addObject:d];
 				}
