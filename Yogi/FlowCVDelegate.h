@@ -8,6 +8,5 @@
 
 @import UIKit;
 
-@interface FlowCVDelegate : NSObject<UICollectionViewDelegateFlowLayout>
-
+@interface FlowCVDelegate : NSObject<UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate>
 @end

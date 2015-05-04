@@ -106,6 +106,10 @@
 		[_flowView registerClass:[FlowCVCell class] forCellWithReuseIdentifier:@"Posture Cell"];
 		_flowView.layer.cornerRadius = 10.0;
 		[_flowView setClipsToBounds:YES];
+		UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+		lpgr.minimumPressDuration = 0.5;
+		lpgr.delegate = self;
+		[self.flowView addGestureRecognizer:lpgr];
 	}
 	return _flowView;
 }
@@ -124,5 +128,19 @@
 		_flowDelegate = [[FlowCVDelegate alloc] init];
 	}
 	return  _flowDelegate;
+}
+
+- (void)handleLongPress:(UIGestureRecognizer *)gestureRecognizer
+{
+	if (gestureRecognizer.state != UIGestureRecognizerStateEnded)
+		return;
+	
+	CGPoint p = [gestureRecognizer locationInView:self.flowView];
+	
+	NSIndexPath *indexPath = [self.flowView indexPathForItemAtPoint:p];
+	if (indexPath) {
+		FlowCVCell *cell = (FlowCVCell *)[self.flowView cellForItemAtIndexPath:indexPath];
+		
+	}
 }
 @end

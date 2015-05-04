@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Practice Collection View Controller-->
+        <!--Practices-->
         <scene sceneID="x3O-6q-ujS">
             <objects>
                 <collectionViewController id="7Oy-pt-4LH" customClass="PracticeCollectionViewController" sceneMemberID="viewController">
@@ -38,9 +38,7 @@
                             <outlet property="delegate" destination="7Oy-pt-4LH" id="TmJ-oX-oOf"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="EnK-uf-TJf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6d0-MJ-Ybv"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Practices" id="EnK-uf-TJf"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9I-8l-GcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

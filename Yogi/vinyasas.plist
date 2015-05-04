@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>sun salutation a</string>
+		<key>color</key>
+		<string>red</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>sun salutation b</string>
+		<key>color</key>
+		<string>red</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>hand to toe pose</string>
+		<key>color</key>
+		<string>yellow</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>warrior</string>
+		<key>color</key>
+		<string>orange</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>dandasana</string>
+		<key>color</key>
+		<string>blue</string>
+	</dict>
+	<string></string>
+	<string></string>
+</array>
+</plist>

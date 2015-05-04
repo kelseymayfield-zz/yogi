@@ -14,6 +14,10 @@
 		F083C8CC1AEEDA92002F3510 /* FlowCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */; };
 		F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */; };
 		F083C8D01AEEDEC8002F3510 /* sun salutation b.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */; };
+		F083C8E11AF1E6EA002F3510 /* hand to toe pose.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */; };
+		F083C8E31AF2A955002F3510 /* vinyasas.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E21AF2A955002F3510 /* vinyasas.plist */; };
+		F083C8E51AF2AA03002F3510 /* warrior.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E41AF2AA03002F3510 /* warrior.plist */; };
+		F083C8E71AF7E659002F3510 /* dandasana.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E61AF7E659002F3510 /* dandasana.plist */; };
 		F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08DE3E51AE7F93D001B8320 /* Label Colors.plist */; };
 		F09026801AE05CBA00F92889 /* PracticeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */; };
 		F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */; };
@@ -41,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E2A3B2C872A7EB86398E9D7 /* Pods_Yogi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yogi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95277365D9E67C42E29A8BD0 /* Pods-Yogi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yogi/Pods-Yogi.release.xcconfig"; sourceTree = "<group>"; };
+		BE039ABB00EF3C832ADC9749 /* Pods-Yogi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yogi/Pods-Yogi.debug.xcconfig"; sourceTree = "<group>"; };
 		F019424C1AD87BF0003CF715 /* Posture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Posture.h; sourceTree = "<group>"; };
 		F019424D1AD87C3D003CF715 /* Posture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Posture.m; sourceTree = "<group>"; };
 		F02EC6781ADB3927005A24C2 /* sun salutation a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sun salutation a.json"; sourceTree = "<group>"; };
@@ -52,6 +59,11 @@
 		F083C8CB1AEEDA92002F3510 /* FlowCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCVCell.m; sourceTree = "<group>"; };
 		F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation a.plist"; sourceTree = "<group>"; };
 		F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation b.plist"; sourceTree = "<group>"; };
+		F083C8D41AEFF270002F3510 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/Pods-Yogi/pop.framework"; sourceTree = "<group>"; };
+		F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hand to toe pose.plist"; sourceTree = "<group>"; };
+		F083C8E21AF2A955002F3510 /* vinyasas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vinyasas.plist; sourceTree = "<group>"; };
+		F083C8E41AF2AA03002F3510 /* warrior.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = warrior.plist; sourceTree = "<group>"; };
+		F083C8E61AF7E659002F3510 /* dandasana.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dandasana.plist; sourceTree = "<group>"; };
 		F08DE3E51AE7F93D001B8320 /* Label Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Label Colors.plist"; sourceTree = "<group>"; };
 		F090267E1AE05CBA00F92889 /* PracticeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PracticeCollectionViewController.h; path = ../PracticeCollectionViewController.h; sourceTree = "<group>"; };
 		F090267F1AE05CBA00F92889 /* PracticeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PracticeCollectionViewController.m; path = ../PracticeCollectionViewController.m; sourceTree = "<group>"; };
@@ -97,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97ACE6958E422EFCE2116BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE039ABB00EF3C832ADC9749 /* Pods-Yogi.debug.xcconfig */,
+				95277365D9E67C42E29A8BD0 /* Pods-Yogi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F07B1AA71AEDAD8F00CAD89C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +129,15 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		F083C8D91AF146C0002F3510 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED8B021AD8643100898BFE /* AppDelegate.h */,
+				F0ED8B031AD8643100898BFE /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
 		F090268C1AE470B300F92889 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +146,10 @@
 				F02EC6781ADB3927005A24C2 /* sun salutation a.json */,
 				F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */,
 				F08DE3E51AE7F93D001B8320 /* Label Colors.plist */,
+				F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */,
+				F083C8E21AF2A955002F3510 /* vinyasas.plist */,
+				F083C8E61AF7E659002F3510 /* dandasana.plist */,
+				F083C8E41AF2AA03002F3510 /* warrior.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -126,6 +160,8 @@
 				F0ED8AFD1AD8643100898BFE /* Yogi */,
 				F0ED8B1A1AD8643100898BFE /* YogiTests */,
 				F0ED8AFC1AD8643100898BFE /* Products */,
+				97ACE6958E422EFCE2116BEA /* Pods */,
+				F7A574626DA91DB9FA911F24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,8 +180,7 @@
 				F090268C1AE470B300F92889 /* Resources */,
 				F0ED8B271AD8645300898BFE /* InstructionReader.h */,
 				F0ED8B281AD8647000898BFE /* InstructionReader.m */,
-				F0ED8B021AD8643100898BFE /* AppDelegate.h */,
-				F0ED8B031AD8643100898BFE /* AppDelegate.m */,
+				F083C8D91AF146C0002F3510 /* App Delegate */,
 				F07B1AA71AEDAD8F00CAD89C /* View Controllers */,
 				F019424C1AD87BF0003CF715 /* Posture.h */,
 				F019424D1AD87C3D003CF715 /* Posture.m */,
@@ -195,6 +230,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7A574626DA91DB9FA911F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F083C8D41AEFF270002F3510 /* pop.framework */,
+				5E2A3B2C872A7EB86398E9D7 /* Pods_Yogi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0ED8B211AD8643100898BFE /* Build configuration list for PBXNativeTarget "Yogi" */;
 			buildPhases = (
+				7995423D2DAC5A1634E6DE64 /* Check Pods Manifest.lock */,
 				F0ED8AF71AD8643100898BFE /* Sources */,
 				F0ED8AF81AD8643100898BFE /* Frameworks */,
 				F0ED8AF91AD8643100898BFE /* Resources */,
+				FEBFD218DB83D7AFA85DFB76 /* Embed Pods Frameworks */,
+				7FEE85227A6C3F4C09A8C41C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,10 +322,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F083C8E71AF7E659002F3510 /* dandasana.plist in Resources */,
 				F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */,
 				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
+				F083C8E31AF2A955002F3510 /* vinyasas.plist in Resources */,
 				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
+				F083C8E11AF1E6EA002F3510 /* hand to toe pose.plist in Resources */,
+				F083C8E51AF2AA03002F3510 /* warrior.plist in Resources */,
 				F083C8D01AEEDEC8002F3510 /* sun salutation b.plist in Resources */,
 				F0ED8B121AD8643100898BFE /* LaunchScreen.xib in Resources */,
 				F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */,
@@ -294,6 +345,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7995423D2DAC5A1634E6DE64 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEE85227A6C3F4C09A8C41C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yogi/Pods-Yogi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEBFD218DB83D7AFA85DFB76 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yogi/Pods-Yogi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0ED8AF71AD8643100898BFE /* Sources */ = {
@@ -437,20 +536,48 @@
 		};
 		F0ED8B221AD8643100898BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE039ABB00EF3C832ADC9749 /* Pods-Yogi.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = Yogi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		F0ED8B231AD8643100898BFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95277365D9E67C42E29A8BD0 /* Pods-Yogi.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = Yogi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

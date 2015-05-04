@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Urdhva Vrikshasana</string>
+		<key>image</key>
+		<string>urdhva vrikshasana</string>
+		<key>instructions</key>
+		<string>Inhale, and raise your arms above your head.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uttanasana A</string>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, spread your fingers, and hinge forward into a forward fold, placing hands on the mat.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uttanasana B</string>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, ground your hands, look up, and straighten your spine.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, float to the back of your mat, and come halfway down, elbows grazing the sides.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, roll onto the tops of your feet, opening the chest through straight arms, upward facing dog.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes and lift your hips and straighten your arms, downward facing dog.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Come to seat</string>
+		<key>image</key>
+		<string>jump through</string>
+		<key>instructions</key>
+		<string>Inhale, jump forward onto straight arms with legs bent in the air. Exhale, and bring legs through your arms and come to a seat.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dandasana</string>
+		<key>image</key>
+		<string>dandasana</string>
+		<key>instructions</key>
+		<string>Straighten your legs in front of you and sit up straight.</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Paschimottanasana A</string>
+		<key>image</key>
+		<string>paschimottanasana a</string>
+		<key>instructions</key>
+		<string>Inhale,  grab your big toes, and straighten your back. On an exhale, hinge forward, bending your elbows so that your head reaches toward your toes.</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Inhale, place your hands at your sides and lift up, bending legs in the air. Exhale, send your legs back and lower halfway down.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, roll on the tops of your feet and open your chest, upward facing dog.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes and push back to downward facing dog.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uttanasana B</string>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Look between your hands and jump your feet forward. Inhale, look up with a flat back.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uttanasana A</string>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale and bring your chest towards your legs.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Uttanasana B</string>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, look up with a straight spine.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tadasana</string>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>Exhale, stand all the way up with hands at your sides.</string>
+	</dict>
+</array>
+</plist>

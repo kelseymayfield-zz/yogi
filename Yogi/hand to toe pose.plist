@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>leg lift</string>
+		<key>instructions</key>
+		<string>Inhale, lift your right leg and take your big toe with your right hand.</string>
+		<key>name</key>
+		<string>Lift right leg</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta padangushthasana</string>
+		<key>instructions</key>
+		<string>Exhale, bend forward, chin to shinbone.</string>
+		<key>name</key>
+		<string>Utthita Hasta Padangushthasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta pandagusthasana head lift</string>
+		<key>instructions</key>
+		<string>Inhale, and lift your head.</string>
+		<key>name</key>
+		<string>Lift head</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita parshvasahita</string>
+		<key>instructions</key>
+		<string>Exhale, extend your leg to the right, and look over your left shoulder.</string>
+		<key>name</key>
+		<string>Utthita Parshvasahita</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>leg lift</string>
+		<key>instructions</key>
+		<string>Inhale, bring your leg in front of you.</string>
+		<key>name</key>
+		<string>Leg in front</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>leg lift high</string>
+		<key>instructions</key>
+		<string>Exhale, lift your leg as high as you can while keeping your back straight.</string>
+		<key>name</key>
+		<string>Lift leg high</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta padangushthasana waist</string>
+		<key>instructions</key>
+		<string>Inhale, and put your hands on your waist. Exhale, and lean your chin forward without lowering the leg.</string>
+		<key>name</key>
+		<string>Utthita Hasta Padangushthasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>On an exhale, lower your leg down to standing.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>leg lift</string>
+		<key>instructions</key>
+		<string>Inhale, lift your left leg and take your big toe with your left hand.</string>
+		<key>name</key>
+		<string>Lift left leg</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta padangushthasana</string>
+		<key>instructions</key>
+		<string>Exhale, bend forward, chin to shinbone.</string>
+		<key>name</key>
+		<string>Utthita Hasta Padangushthasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta pandagusthasana head lift</string>
+		<key>instructions</key>
+		<string>Inhale, and lift your head.</string>
+		<key>name</key>
+		<string>Lift head</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita parshvasahita</string>
+		<key>instructions</key>
+		<string>Exhale, extend your leg to the right, and look over your left shoulder.</string>
+		<key>name</key>
+		<string>Utthita Parshvasahita</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>leg lift</string>
+		<key>instructions</key>
+		<string>Inhale, bring your leg in front of you.</string>
+		<key>name</key>
+		<string>Leg in front</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>leg lift high</string>
+		<key>instructions</key>
+		<string>Exhale, lift your leg as high as you can while keeping your back straight.</string>
+		<key>name</key>
+		<string>Lift leg high</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita hasta padangushthasana waist</string>
+		<key>instructions</key>
+		<string>Inhale, and put your hands on your waist. Exhale, and lean your chin forward without lowering the leg.</string>
+		<key>name</key>
+		<string>Utthita Hasta Padangushthasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>On an exhale, lower your leg down to standing.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+</array>
+</plist>
