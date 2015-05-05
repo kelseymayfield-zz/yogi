@@ -7,32 +7,48 @@
 		<string>sun salutation a</string>
 		<key>color</key>
 		<string>red</string>
+		<key>image</key>
+		<string>sun a</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>sun salutation b</string>
 		<key>color</key>
 		<string>red</string>
+		<key>image</key>
+		<string>sun b</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>hand to toe pose</string>
 		<key>color</key>
 		<string>yellow</string>
+		<key>image</key>
+		<string>hand to toe</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>warrior</string>
 		<key>color</key>
 		<string>orange</string>
+		<key>image</key>
+		<string>warrior i</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>dandasana</string>
 		<key>color</key>
 		<string>blue</string>
+		<key>image</key>
+		<string>dandasana</string>
 	</dict>
-	<string></string>
-	<string></string>
+	<dict>
+		<key>name</key>
+		<string>bird of paradise </string>
+		<key>color</key>
+		<string>green</string>
+		<key>image</key>
+		<string>bird of paradise</string>
+	</dict>
 </array>
 </plist>

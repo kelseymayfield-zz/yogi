@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+<!-- vinyasa -->
+	<dict>
+		<key>image</key>
+		<string>utkatasana</string>
+		<key>instructions</key>
+		<string>Inhale, sit low, and raise your arms above your head.</string>
+		<key>name</key>
+		<string>Utkanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, fold forward, and bring your hands to the floor.</string>
+		<key>name</key>
+		<string>Uttanasana A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, ground your hands and look halfway up.</string>
+		<key>name</key>
+		<string>Uttanasana B</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+<!-- warrior on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your right foot between your hands, place your left heel down at a 45 degree angle, and on an inhale, come up to Warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open up into warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior, bring your left hand to your left leg and your right hand towards the sky.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands by your right foot, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+<!-- warrior on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your left foot between your hands, place your right heel down, and on an inhale, come up to Warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open up into warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior, bring your right hand to your right leg and your left hand towards the sky.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands by your left foot, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+<!-- Triangle & half moon on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your right foot between your hands, place your left heel down at a 45 degree angle, and on an inhale, come up to Warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open out to warrior two</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita trikonasana</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your right leg and lift your right arm, tilting the hips back. Exhale, reach to the front of the mat, placing the right hand on the mat or shin. Lift the left arm up into triangle pose.</string>
+		<key>name</key>
+		<string>Trikonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>half moon</string>
+		<key>instructions</key>
+		<string>Take your left hand to your hip, turn to look down, bend the right knee, fingertips way out in front of the right foot, and lift the back leg for half moon pose. Extend the left hand towards the sky.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bowed half moon</string>
+		<key>instructions</key>
+		<string>Take your left foot in your left hand for bowed half moon pose.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana Chapasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>half moon</string>
+		<key>instructions</key>
+		<string>Inhale, release your left foot and come back to half moon pose.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana</string>
+	</dict>
+<!-- Side angle on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, look forward, and bend the right knee, lowering the left leg back down into warrior two. On an inhale, rise up into warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior, bring your left hand to your left leg and your right hand towards the sky.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, right forearm to thigh, left arm up, turn your palm to the wall behind you and wrap the arm behind you in a half bind.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Lizard on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Release the bind and on an inhale rise up to warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, flip the right palm, reverse warrior.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>lizard</string>
+		<key>instructions</key>
+		<string>Exhale and windmill the hands down to the inside of the right foot, walk the right foot to the right edge of your mat, and come onto your forearms.</string>
+		<key>name</key>
+		<string>Utthan Pristhasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Pyramid on right side -->
+	<dict>
+		<key>image</key>
+		<string>pyramid</string>
+		<key>instructions</key>
+		<string>Come up to your hands on either side of the right foot and bring your left foot in about a foot, extending the legs. On an inhale, lift your heart with a flat back, and exhale, fold over the front leg.</string>
+		<key>name</key>
+		<string>Parsvottanasana</string>
+		<key>breaths</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+<!-- Triangle & half moon on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your right foot between your hands, place your right heel down at a 45 degree angle, and on an inhale, come up to Warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open out to warrior two</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utthita trikonasana</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your left leg and lift your left arm, tilting the hips back. Exhale, reach to the front of the mat, placing the left hand on the mat or shin. Lift the right arm up into triangle pose.</string>
+		<key>name</key>
+		<string>Trikonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>half moon</string>
+		<key>instructions</key>
+		<string>Take your right hand to your hip, turn to look down, bend the left knee, fingertips way out in front of the left foot, and lift the back leg for half moon pose. Extend the right hand towards the sky.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bowed half moon</string>
+		<key>instructions</key>
+		<string>Take your right foot in your right hand for bowed half moon pose.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana Chapasana</string>
+		<key>breaths</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>half moon</string>
+		<key>instructions</key>
+		<string>Inhale, release your right foot and come back to half moon pose.</string>
+		<key>name</key>
+		<string>Ardha Chandrasana</string>
+	</dict>
+<!-- Side angle on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, look forward, and bend the left knee, lowering the right leg back down into warrior two. On an inhale, rise up into warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior, bring your right hand to your right leg and your left hand towards the sky.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, left forearm to thigh, right arm up, turn your palm to the wall behind you and wrap the arm behind you in a half bind.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Lizard on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Release the bind and on an inhale rise up to warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+		<key>breaths</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, flip the left palm, reverse warrior.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>lizard</string>
+		<key>instructions</key>
+		<string>Exhale and windmill the hands down to the inside of the left foot, walk the left foot to the left edge of your mat, and come onto your forearms.</string>
+		<key>name</key>
+		<string>Utthan Pristhasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Pyramid on left side -->
+	<dict>
+		<key>image</key>
+		<string>pyramid</string>
+		<key>instructions</key>
+		<string>Come up to your hands on either side of the left foot and bring your right foot in about a foot, extending the legs. On an inhale, lift your heart with a flat back, and exhale, fold over the front leg.</string>
+		<key>name</key>
+		<string>Parsvottanasana</string>
+		<key>breaths</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+
+	<dict>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, come to the front of your mat, and look halfway up with a flat back.</string>
+		<key>name</key>
+		<string>Uttanasana B</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, fold forward, bringing your head to your knees.</string>
+		<key>name</key>
+		<string>Uttanasana A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utkanasana</string>
+		<key>instructions</key>
+		<string>Inhale, sit low, and come up to chair pose.</string>
+		<key>name</key>
+		<string>Utkanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>Exhale, straighten your legs, and bring your hands to heart's center.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+<!-- Humble warrior on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your right foot between your hands, place your left heel down at a 45 degree angle, and on an inhale, come up to Warrior one. Exhale, and interlace your hands behind your back.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>humble warrior</string>
+		<key>instructions</key>
+		<string>Inhale, pull your palms and open your chest, and on an exhale stretch forward so your right shoulder is on the inside of your right leg for humble warrior.</string>
+		<key>name</key>
+		<string>Baddha Virabhadrasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Bird of paradise on right side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Inhale, rise up to warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open up to warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, right hand down the inside of your right leg, and come into a bound side angle pose.</string>
+		<key>name</key>
+		<string>Baddha Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bird of paradise</string>
+		<key>instructions</key>
+		<string>Grip your top hand with your bottom hand, look down, take a big step forward with your left leg and shift your weight onto the left leg, start to lift up to standing, right leg coming up with you. Stand up straight and if you're steady, straighten your leg.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, and step your right leg back down, sending your left leg back behind you for bound side angle pose.</string>
+		<key>name</key>
+		<string>Baddha Utthita Parshvakonasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Inhale, and unbind your arms.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+	</dict>
+<!-- vinyasa -->
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands by your right foot, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+<!-- humble warrior on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Bring your left foot between your hands, place your right heel down at a 45 degree angle, and on an inhale, come up to Warrior one. Exhale, and interlace your hands behind your back.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>humble warrior</string>
+		<key>instructions</key>
+		<string>Inhale, pull your palms and open your chest, and on an exhale stretch forward so your left shoulder is on the inside of your left leg for humble warrior.</string>
+		<key>name</key>
+		<string>Baddha Virabhadrasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+<!-- Bird of paradise on left side -->
+	<dict>
+		<key>image</key>
+		<string>warrior i</string>
+		<key>instructions</key>
+		<string>Inhale, rise up to warrior one.</string>
+		<key>name</key>
+		<string>Virabhadrasana I</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>warrior ii</string>
+		<key>instructions</key>
+		<string>Exhale, open up to warrior two.</string>
+		<key>name</key>
+		<string>Virabhadrasana II</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>reverse warrior</string>
+		<key>instructions</key>
+		<string>Inhale, reverse warrior.</string>
+		<key>name</key>
+		<string>Viparita Virabhadrasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, left hand down the inside of your left leg, and come into a bound side angle pose.</string>
+		<key>name</key>
+		<string>Baddha Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bird of paradise</string>
+		<key>instructions</key>
+		<string>Grip your top hand with your bottom hand, look down, take a big step forward with your right leg and shift your weight onto the right leg, start to lift up to standing, left leg coming up with you. Stand up straight and if you're steady, straighten your leg.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+		<key>breaths</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Exhale, and step your left leg back down, sending your right leg back behind you for bound side angle pose.</string>
+		<key>name</key>
+		<string>Baddha Utthita Parshvakonasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>side angle</string>
+		<key>instructions</key>
+		<string>Inhale, and unbind your arms.</string>
+		<key>name</key>
+		<string>Utthita Parshvakonasana</string>
+	</dict>
+<!-- vinyasa -->
+	<dict>
+		<key>image</key>
+		<string>chaturanga</string>
+		<key>instructions</key>
+		<string>Exhale, plant your hands by your right foot, float back, elbows close to sides, lower halfway down.</string>
+		<key>name</key>
+		<string>Chaturanga Dandasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>updog</string>
+		<key>instructions</key>
+		<string>Inhale, straighten your arms, open your chest, upward facing dog.</string>
+		<key>name</key>
+		<string>Urdhva Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>downward facing dog</string>
+		<key>instructions</key>
+		<string>Exhale, tuck your toes, push back, lifting the sits bones, and straighten your arms. Downward facing dog.</string>
+		<key>name</key>
+		<string>Adho Mukha Shvanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana b</string>
+		<key>instructions</key>
+		<string>Inhale, come to the front of your mat, and look halfway up with a flat back.</string>
+		<key>name</key>
+		<string>Uttanasana B</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>uttanasana a</string>
+		<key>instructions</key>
+		<string>Exhale, fold forward, bringing your head to your knees.</string>
+		<key>name</key>
+		<string>Uttanasana A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>utkanasana</string>
+		<key>instructions</key>
+		<string>Inhale, sit low, and come up to chair pose.</string>
+		<key>name</key>
+		<string>Utkanasana</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tadasana</string>
+		<key>instructions</key>
+		<string>Exhale, straighten your legs, and bring your hands to heart's center.</string>
+		<key>name</key>
+		<string>Tadasana</string>
+	</dict>
+</array>
+</plist>

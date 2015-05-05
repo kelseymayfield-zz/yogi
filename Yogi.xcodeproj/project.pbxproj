@@ -15,7 +15,7 @@
 		F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */; };
 		F083C8D01AEEDEC8002F3510 /* sun salutation b.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */; };
 		F083C8E11AF1E6EA002F3510 /* hand to toe pose.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */; };
-		F083C8E31AF2A955002F3510 /* vinyasas.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E21AF2A955002F3510 /* vinyasas.plist */; };
+		F083C8E31AF2A955002F3510 /* flows.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E21AF2A955002F3510 /* flows.plist */; };
 		F083C8E51AF2AA03002F3510 /* warrior.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E41AF2AA03002F3510 /* warrior.plist */; };
 		F083C8E71AF7E659002F3510 /* dandasana.plist in Resources */ = {isa = PBXBuildFile; fileRef = F083C8E61AF7E659002F3510 /* dandasana.plist */; };
 		F08DE3E61AE7F93D001B8320 /* Label Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08DE3E51AE7F93D001B8320 /* Label Colors.plist */; };
@@ -24,6 +24,7 @@
 		F09026861AE0636D00F92889 /* PracticeCVLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026851AE0636D00F92889 /* PracticeCVLayout.m */; };
 		F09026891AE0B04900F92889 /* PracticeCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F09026881AE0B04900F92889 /* PracticeCVDataSource.m */; };
 		F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */ = {isa = PBXBuildFile; fileRef = F090268A1AE46D0E00F92889 /* sun salutation b.json */; };
+		F0BE9F631AF874D400CF1CCB /* Bird of paradise.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BE9F621AF874D400CF1CCB /* Bird of paradise.plist */; };
 		F0ED8B011AD8643100898BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B001AD8643100898BFE /* main.m */; };
 		F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B031AD8643100898BFE /* AppDelegate.m */; };
 		F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B091AD8643100898BFE /* ViewController.m */; };
@@ -61,7 +62,7 @@
 		F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sun salutation b.plist"; sourceTree = "<group>"; };
 		F083C8D41AEFF270002F3510 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/Pods-Yogi/pop.framework"; sourceTree = "<group>"; };
 		F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hand to toe pose.plist"; sourceTree = "<group>"; };
-		F083C8E21AF2A955002F3510 /* vinyasas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vinyasas.plist; sourceTree = "<group>"; };
+		F083C8E21AF2A955002F3510 /* flows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flows.plist; sourceTree = "<group>"; };
 		F083C8E41AF2AA03002F3510 /* warrior.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = warrior.plist; sourceTree = "<group>"; };
 		F083C8E61AF7E659002F3510 /* dandasana.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dandasana.plist; sourceTree = "<group>"; };
 		F08DE3E51AE7F93D001B8320 /* Label Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Label Colors.plist"; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		F09026871AE0B04900F92889 /* PracticeCVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeCVDataSource.h; sourceTree = "<group>"; };
 		F09026881AE0B04900F92889 /* PracticeCVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeCVDataSource.m; sourceTree = "<group>"; };
 		F090268A1AE46D0E00F92889 /* sun salutation b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sun salutation b.json"; sourceTree = "<group>"; };
+		F0BE9F621AF874D400CF1CCB /* Bird of paradise.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bird of paradise.plist"; sourceTree = "<group>"; };
 		F0ED8AFB1AD8643100898BFE /* Yogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8AFF1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B001AD8643100898BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,13 +143,14 @@
 		F090268C1AE470B300F92889 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F0BE9F621AF874D400CF1CCB /* Bird of paradise.plist */,
 				F083C8CF1AEEDEC8002F3510 /* sun salutation b.plist */,
 				F090268A1AE46D0E00F92889 /* sun salutation b.json */,
 				F02EC6781ADB3927005A24C2 /* sun salutation a.json */,
 				F083C8CD1AEEDD67002F3510 /* sun salutation a.plist */,
 				F08DE3E51AE7F93D001B8320 /* Label Colors.plist */,
 				F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */,
-				F083C8E21AF2A955002F3510 /* vinyasas.plist */,
+				F083C8E21AF2A955002F3510 /* flows.plist */,
 				F083C8E61AF7E659002F3510 /* dandasana.plist */,
 				F083C8E41AF2AA03002F3510 /* warrior.plist */,
 			);
@@ -322,10 +325,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BE9F631AF874D400CF1CCB /* Bird of paradise.plist in Resources */,
 				F083C8E71AF7E659002F3510 /* dandasana.plist in Resources */,
 				F083C8CE1AEEDD67002F3510 /* sun salutation a.plist in Resources */,
 				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
-				F083C8E31AF2A955002F3510 /* vinyasas.plist in Resources */,
+				F083C8E31AF2A955002F3510 /* flows.plist in Resources */,
 				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
 				F083C8E11AF1E6EA002F3510 /* hand to toe pose.plist in Resources */,

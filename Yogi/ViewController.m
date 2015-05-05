@@ -78,10 +78,6 @@
 - (NSArray *)flow
 {
 	if (!_flow) {
-//		NSError *error;
-//		NSError *urlError;
-//		NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"sun salutation a" ofType:@"json"];
-//		
 		NSMutableArray *array = [NSMutableArray new];
 		for (NSDictionary *d in self.practiceInfo) {
 			Posture *p = [[Posture alloc] initWithName:d[@"name"] imageName:d[@"image"] instructions:d[@"instructions"]];
@@ -90,25 +86,6 @@
 				p.numBreaths = breaths;
 			[array addObject:p];
 		}
-//
-//		NSData *contents = [NSData dataWithContentsOfFile:jsonPath];
-//		if (!urlError) {
-//			id object = [NSJSONSerialization JSONObjectWithData:contents options:NSJSONReadingAllowFragments error:&error];
-//			if (!error) {
-////				NSLog(@"%@", object);
-//				for (NSDictionary *d in object) {
-//					Posture *p = [[Posture alloc] initWithName:d[@"name"] imageName:d[@"image"] instructions:d[@"instructions"]];
-//					NSInteger breaths = [d[@"breaths"] integerValue];
-//					if (breaths)
-//						p.numBreaths = breaths;
-//					[array addObject:p];
-//				}
-//			}
-//			else
-//				NSLog(@"%@", error.localizedDescription);
-//		} else {
-//			NSLog(@"%@", urlError.localizedDescription);
-//		}
 		
 		_flow = [NSArray arrayWithArray:array];
 	}
