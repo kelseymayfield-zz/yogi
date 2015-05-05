@@ -42,9 +42,16 @@
 
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color
 {
-	self.titleLabel.text = label;
-	if ([label isEqualToString:@"New Practice"]) {
-		self.titleLabel.userInteractionEnabled = YES;
+	if (![label isEqualToString:@"New Practice"]) {
+		self.titleLabel.text = label;
+	} else {
+		UITextField *textField = [[UITextField alloc] initWithFrame:self.titleLabel.frame];
+		textField.delegate = self;
+		textField.textColor = [CustomColors greyColor];
+		textField.font = [UIFont fontWithName:@"Avenir Next" size:30];
+		textField.textAlignment = NSTextAlignmentLeft;
+		textField.placeholder = label;
+		[self.contentView addSubview:textField];
 	}
 	self.titleLabel.textColor = color;
 }
@@ -54,7 +61,7 @@
 	if (!_titleLabel) {
 		_titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, CGRectGetWidth(self.contentView.frame), 60)];
 		_titleLabel.textAlignment = NSTextAlignmentLeft;
-		_titleLabel.font = [UIFont systemFontOfSize:30];
+		_titleLabel.font = [UIFont fontWithName:@"Avenir Next" size:30];
 		_titleLabel.textColor = [UIColor whiteColor];
 		_titleLabel.backgroundColor = [UIColor clearColor];
 	}
@@ -132,15 +139,33 @@
 
 - (void)handleLongPress:(UIGestureRecognizer *)gestureRecognizer
 {
-	if (gestureRecognizer.state != UIGestureRecognizerStateEnded)
-		return;
-	
-	CGPoint p = [gestureRecognizer locationInView:self.flowView];
-	
-	NSIndexPath *indexPath = [self.flowView indexPathForItemAtPoint:p];
-	if (indexPath) {
-		FlowCVCell *cell = (FlowCVCell *)[self.flowView cellForItemAtIndexPath:indexPath];
-		
-	}
+//	if (gestureRecognizer.state != UIGestureRecognizerStateEnded)
+//		return;
+//	
+//	CGPoint p = [gestureRecognizer locationInView:self.flowView];
+//	
+//	NSIndexPath *indexPath = [self.flowView indexPathForItemAtPoint:p];
+//	if (indexPath) {
+//		FlowCVCell *cell = (FlowCVCell *)[self.flowView cellForItemAtIndexPath:indexPath];
+//		
+//	}
 }
+
+#pragma mark - UITextFieldDelegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"Start Editing Notification" object:self userInfo:@{@"cell":self}];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"Did Exit Notification" object:self];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	[textField resignFirstResponder];
+	return YES;
+}
+
 @end

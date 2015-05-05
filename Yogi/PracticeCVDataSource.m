@@ -88,6 +88,9 @@
 						},
 					@{
 						@"title":@"Full Sun Salutation",@"flows":@[@"sun salutation a", @"sun salutation a", @"sun salutation b", @"sun salutation b"],@"color":UIColorFromRGB(0x34aadc)
+						},
+					@{
+						@"title":@"Bird of paradise practice",@"flows":@[@"sun salutation a", @"sun salutation b", @"warrior", @"bird of paradise", @"dandasana"],@"color":[CustomColors greenColor]
 						}
 					];
 	return _practices;
@@ -106,6 +109,12 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	PracticeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[PracticeCollectionViewCell reuseIdentifier] forIndexPath:indexPath];
+	
+	if (indexPath.row == 0) {
+		cell.hasLabel = NO;
+	} else {
+		cell.hasLabel = YES;
+	}
 	
 	NSDictionary *dict = self.practices[indexPath.row];
 	if (dict[@"title"]) { // Normal cell
@@ -131,22 +140,12 @@
 	NSArray *flowNames = [self.practices[indexPath.row] objectForKey:@"flows"];
 	
 	for (NSString *flowName in flowNames) {
-		NSError *error;
-		NSError *urlError;
-		NSString *jsonPath = [[NSBundle mainBundle] pathForResource:flowName ofType:@"json"];
-		
-		NSData *contents = [NSData dataWithContentsOfFile:jsonPath];
-		
-		if (!urlError) {
-			id object = [NSJSONSerialization JSONObjectWithData:contents options:NSJSONReadingAllowFragments error:&error];
-			if (!error) {
-				for (NSDictionary *d in object) {
-					[flows addObject:d];
-				}
-			}
-		}
+		NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flowName ofType:@"plist"]];
+		[flows addObjectsFromArray:array];
 	}
-//	[self.practices[indexPath.row] addObject:flows];
+	if ([flowNames count] == 0) {
+		// add a + marker for adding a new flow
+	}
 	return [NSArray arrayWithArray:flows];
 }
 

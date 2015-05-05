@@ -10,9 +10,10 @@
 #import "FlowCVDataSource.h"
 #import "FlowCVDelegate.h"
 #import "FlowCVCell.h"
+#import "CustomColors.h"
 #import <POP/POP.h>
 
-@interface PracticeCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate>
+@interface PracticeCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate, UITextFieldDelegate>
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color;
 - (void)addFlows:(NSArray *)flows;
 + (NSString *)reuseIdentifier;
