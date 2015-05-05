@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PracticeCVDataSource.h"
 #import "PracticeCVLayout.h"
+#import "ModalViewController.h"
 #import "PracticeCollectionViewCell.h"
 
 @interface PracticeCollectionViewController : UICollectionViewController

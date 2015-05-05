@@ -13,4 +13,10 @@
 {
 	return CGSizeMake(50, 50);
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+	
+
+}
 @end

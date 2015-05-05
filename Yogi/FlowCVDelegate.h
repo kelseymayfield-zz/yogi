@@ -7,6 +7,8 @@
 //
 
 @import UIKit;
+#import "FlowCVDataSource.h"
+#import "ModalViewController.h"
 
 @interface FlowCVDelegate : NSObject<UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate>
 @end

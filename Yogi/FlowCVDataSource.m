@@ -43,6 +43,11 @@
 	
 }
 
+- (NSArray *)flows
+{
+	return _flows;
+}
+
 //- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 //{
 //	UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];

@@ -25,6 +25,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveStartPracticeNotification:) name:@"Start Practice Notification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveStartEditingNotification:) name:@"Start Editing Notification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveDidExitNotification:) name:@"Did Exit Notification" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveSelectFlowNotification:) name:@"Select Flow Notification" object:nil];
     
     // Set data source
 	 _dataSource = [[PracticeCVDataSource alloc] init];
@@ -70,6 +71,13 @@
 		
 		[self.layout invalidateLayout];
 	}
+}
+
+- (void)receiveSelectFlowNotification:(NSNotification *)notification {
+	ModalViewController *mvc = [ModalViewController new];
+	[self presentViewController:mvc animated:YES completion:^{
+		
+	}];
 }
 
 - (void)receiveDidExitNotification:(NSNotification *)notification {

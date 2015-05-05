@@ -14,4 +14,5 @@
 
 @interface FlowCVDataSource : NSObject<UICollectionViewDataSource>
 - (id)initWithFlows:(NSArray *)flows;
+- (NSArray *)flows;
 @end
