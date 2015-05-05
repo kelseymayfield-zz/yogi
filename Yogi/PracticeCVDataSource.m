@@ -139,9 +139,15 @@
 	NSMutableArray *flows = [NSMutableArray new];
 	NSArray *flowNames = [self.practices[indexPath.row] objectForKey:@"flows"];
 	
+	NSArray *arr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"flows" ofType:@"plist"]];
+	
 	for (NSString *flowName in flowNames) {
-		NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flowName ofType:@"plist"]];
-		[flows addObjectsFromArray:array];
+		for (NSDictionary *dict in arr) {
+			if ([dict[@"name"] isEqualToString:flowName])
+			[flows addObject:dict];
+		}
+//		NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flowName ofType:@"plist"]];
+//		[flows addObjectsFromArray:array];
 	}
 	if ([flowNames count] == 0) {
 		// add a + marker for adding a new flow
