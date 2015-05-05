@@ -40,7 +40,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Practices" id="EnK-uf-TJf"/>
                     <connections>
-                        <segue destination="KDP-VU-ydm" kind="presentation" identifier="Add Flow Segue" id="RjV-3w-xUh"/>
+                        <segue destination="qHf-1U-MC7" kind="presentation" identifier="Add Flow Segue" id="RjV-3w-xUh"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9I-8l-GcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,6 +155,14 @@
                             <outlet property="delegate" destination="KDP-VU-ydm" id="hg9-5b-bmk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="qEj-tc-4ht">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="wzi-ka-Lph">
+                            <color key="tintColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="custom" customClass="DismissSegue" id="tRq-gJ-sif"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="qDS-jW-bDr" id="Uyj-z7-U7s"/>
                     </connections>
@@ -170,7 +178,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="309" y="1133"/>
+            <point key="canvasLocation" x="1121" y="1133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32E-O1-COc">
@@ -190,6 +198,27 @@
             </objects>
             <point key="canvasLocation" x="-689" y="250"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UW4-yB-9On">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qHf-1U-MC7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6py-wi-1tz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KDP-VU-ydm" kind="relationship" relationship="rootViewController" id="sGe-wk-KGm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwu-N2-fm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="1133"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tRq-gJ-sif"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -29,6 +29,7 @@
 		F0BE9F691AF8966B00CF1CCB /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F681AF8966B00CF1CCB /* ModalViewController.m */; };
 		F0BE9F6B1AF89B7600CF1CCB /* plow.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BE9F6A1AF89B7600CF1CCB /* plow.plist */; };
 		F0BE9F6E1AF913E800CF1CCB /* AddFlowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */; };
+		F0BE9F711AF9359700CF1CCB /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F701AF9359700CF1CCB /* DismissSegue.m */; };
 		F0ED8B011AD8643100898BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B001AD8643100898BFE /* main.m */; };
 		F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B031AD8643100898BFE /* AppDelegate.m */; };
 		F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B091AD8643100898BFE /* ViewController.m */; };
@@ -87,6 +88,8 @@
 		F0BE9F6A1AF89B7600CF1CCB /* plow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plow.plist; sourceTree = "<group>"; };
 		F0BE9F6C1AF913E800CF1CCB /* AddFlowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFlowTableViewController.h; sourceTree = "<group>"; };
 		F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFlowTableViewController.m; sourceTree = "<group>"; };
+		F0BE9F6F1AF9359700CF1CCB /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		F0BE9F701AF9359700CF1CCB /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 		F0ED8AFB1AD8643100898BFE /* Yogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8AFF1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B001AD8643100898BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				F019424C1AD87BF0003CF715 /* Posture.h */,
 				F019424D1AD87C3D003CF715 /* Posture.m */,
 				F0ED8B0B1AD8643100898BFE /* Main.storyboard */,
+				F0BE9F6F1AF9359700CF1CCB /* DismissSegue.h */,
+				F0BE9F701AF9359700CF1CCB /* DismissSegue.m */,
 				F0BE9F6C1AF913E800CF1CCB /* AddFlowTableViewController.h */,
 				F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */,
 				F09026811AE0612300F92889 /* PracticeCollectionViewCell.h */,
@@ -387,7 +392,7 @@
 		};
 		7FEE85227A6C3F4C09A8C41C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -395,14 +400,14 @@
 			name = "Copy Pods Resources";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yogi/Pods-Yogi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEBFD218DB83D7AFA85DFB76 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -410,7 +415,7 @@
 			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yogi/Pods-Yogi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -436,6 +441,7 @@
 				F083C8CC1AEEDA92002F3510 /* FlowCVCell.m in Sources */,
 				F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */,
 				F0ED8B011AD8643100898BFE /* main.m in Sources */,
+				F0BE9F711AF9359700CF1CCB /* DismissSegue.m in Sources */,
 				F07B1AA61AEDA38D00CAD89C /* FlowCVDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

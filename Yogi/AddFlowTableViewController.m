@@ -19,6 +19,7 @@
     [super viewDidLoad];
 	
 	_flows = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"flows" ofType:@"plist"]];
+	_flowGroups = [NSMutableDictionary new];
 	[self sortFlows];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,6 +40,7 @@
 			arr = _flowGroups[color];
 		}
 		[arr addObject:dict];
+		NSLog(@"%@", _flowGroups);
 	}
 }
 
@@ -51,7 +53,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return [self.flowGroups count];
+    return [[self.flowGroups allKeys] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -70,6 +72,7 @@
 	NSString *key = keys[indexPath.section];
 	NSArray *flows = self.flowGroups[key];
 	NSDictionary *dict = flows[indexPath.row];
+	cell.tintColor = [CustomColors purpleColor];
 	cell.textLabel.text = dict[@"name"];
 	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
 	cell.imageView.backgroundColor = [CustomColors getColor:dict[@"color"]];

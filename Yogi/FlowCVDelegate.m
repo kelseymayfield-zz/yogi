@@ -16,7 +16,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"New flow" object:self];
 
 }
 @end
