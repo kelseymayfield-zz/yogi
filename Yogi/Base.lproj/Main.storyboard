@@ -68,11 +68,20 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="450" id="az4-Ow-QA0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZC-uD-K6w">
+                                <rect key="frame" x="538" y="562" width="43" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOW-Xc-Oax"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r8L-Ru-bfw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" constant="10" id="BNi-3O-4mW"/>
                             <constraint firstAttribute="centerY" secondItem="r8L-Ru-bfw" secondAttribute="centerY" id="C0V-kO-zvY"/>
@@ -81,7 +90,9 @@
                             <constraint firstItem="r8L-Ru-bfw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ckY-sv-08X"/>
                             <constraint firstItem="r8L-Ru-bfw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jlB-ns-DaO"/>
                             <constraint firstAttribute="bottom" secondItem="Ojf-3x-NJG" secondAttribute="bottom" priority="250" constant="20" symbolic="YES" id="lDI-n3-kXj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZC-uD-K6w" secondAttribute="bottom" constant="8" symbolic="YES" id="n6C-gq-rzl"/>
                             <constraint firstAttribute="centerX" secondItem="Ojf-3x-NJG" secondAttribute="centerX" id="pTe-qF-dLL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eZC-uD-K6w" secondAttribute="trailing" constant="3" id="qhN-u6-cAF"/>
                             <constraint firstItem="Ojf-3x-NJG" firstAttribute="top" secondItem="r8L-Ru-bfw" secondAttribute="bottom" priority="750" constant="27" id="t2c-95-dU3"/>
                             <constraint firstAttribute="centerX" secondItem="r8L-Ru-bfw" secondAttribute="centerX" id="vid-y5-lC0"/>
                         </constraints>
@@ -95,6 +106,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="pauseButton" destination="eZC-uD-K6w" id="uIx-BY-WVR"/>
                         <outlet property="postureLabel" destination="Ojf-3x-NJG" id="14I-Yk-NT4"/>
                         <outlet property="postureView" destination="r8L-Ru-bfw" id="mQt-p6-eKV"/>
                     </connections>
@@ -122,4 +134,5 @@
             <point key="canvasLocation" x="-689" y="250"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

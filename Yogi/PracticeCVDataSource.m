@@ -90,7 +90,7 @@
 						@"title":@"Full Sun Salutation",@"flows":@[@"sun salutation a", @"sun salutation a", @"sun salutation b", @"sun salutation b"],@"color":UIColorFromRGB(0x34aadc)
 						},
 					@{
-						@"title":@"Bird of paradise practice",@"flows":@[@"sun salutation a", @"sun salutation b", @"warrior", @"bird of paradise", @"dandasana"],@"color":[CustomColors greenColor]
+						@"title":@"Bird of paradise practice",@"flows":@[@"sun salutation a", @"sun salutation b", @"warrior", @"bird of paradise", @"dandasana", @"plow"],@"color":[CustomColors greenColor]
 						}
 					];
 	return _practices;

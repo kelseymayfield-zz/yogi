@@ -79,4 +79,14 @@
 	return _synth;
 }
 
+-(void)pause
+{
+	[self.synth pauseSpeakingAtBoundary:AVSpeechBoundaryWord];
+}
+
+-(void)play
+{
+	[self.synth continueSpeaking];
+}
+
 @end

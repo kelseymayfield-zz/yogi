@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSArray *flow;
 @property (nonatomic) NSInteger idx;
 @property (nonatomic) NSInteger breathsLeft;
+@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
+@property (nonatomic) BOOL isPaused;
 @property (strong, nonatomic) InstructionReader *instructionReader;
 @end
 
@@ -26,11 +28,13 @@
 	Posture *p = self.flow[_idx];
 
 	[_postureView setImage:p.image];
-	[_postureView.layer setMasksToBounds:YES];
 	[_postureView.layer setCornerRadius:10.0];
+	[_postureView.layer setMasksToBounds:YES];
+	[_postureView.layer setBackgroundColor:[UIColor whiteColor].CGColor];
 	_postureLabel.text = p.name;
 	[self.instructionReader addInstruction:p.instructions];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI) name:@"FinishedSpeechNotification" object:nil];
+	self.isPaused = NO;
 }
 
 - (void)updateUI
@@ -39,10 +43,11 @@
 		_breathsLeft--;
 	else {
 		_idx++;
-		if (_idx < [self.flow count]) {
+		if (!self.isPaused && _idx < [self.flow count]) {
 	//		NSLog(@"%f", _postureView.layer.cornerRadius);
 			Posture *p = self.flow[_idx];
 			_postureLabel.text = p.name;
+			_pauseButton.titleLabel.text = @"Pause";
 			if (!p.numBreaths) {
 				[self.instructionReader addInstruction:p.instructions];
 				_breathsLeft = 0;
@@ -65,7 +70,23 @@
 				[_postureView.layer addAnimation:transition forKey:@"transition"];
 			}
 		}
-		
+		else if (self.isPaused) {
+			self.pauseButton.titleLabel.text = @"Play";
+		}
+	}
+}
+
+- (IBAction)didPressPause:(UIButton *)sender {
+	if (!self.isPaused) {
+		self.pauseButton.titleLabel.text = @"Play";
+		[self.instructionReader pause];
+		self.isPaused = YES;
+		return;
+	}
+	else {
+		self.pauseButton.titleLabel.text = @"Pause";
+		self.isPaused = NO;
+		[self.instructionReader play];
 	}
 }
 

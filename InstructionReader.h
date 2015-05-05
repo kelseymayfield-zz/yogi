@@ -13,5 +13,6 @@
 
 - (void)addInstruction:(NSString *)instruction;
 - (void)addInstruction:(NSString *)instruction withBreaths:(NSInteger)breaths;
-
+- (void)pause;
+- (void)play;
 @end
