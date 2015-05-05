@@ -127,7 +127,7 @@
 	
 	cell.flowView.delegate = cell.flowDelegate;
 	cell.flowView.dataSource = cell.flowDataSource;
-	cell.flowView.backgroundColor = [UIColor lightGrayColor];
+	cell.flowView.backgroundColor = [CustomColors getColor:@"offWhiteColor"];
 	
 	[cell.flowView reloadData];
 	

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>lightGrayColor</key>
+	<integer>14145495</integer>
 	<key>hotPinkColor</key>
 	<integer>16722536</integer>
 	<key>greyColor</key>
@@ -20,5 +22,7 @@
 	<integer>5036388</integer>
 	<key>blueColor</key>
 	<integer>3451612</integer>
+	<key>offWhiteColor</key>
+	<integer>16250871</integer>
 </dict>
 </plist>

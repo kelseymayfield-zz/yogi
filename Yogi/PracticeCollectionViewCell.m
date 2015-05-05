@@ -21,7 +21,7 @@
 	self = [super initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
 	if (self) {
 		UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
-		view.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1.0];
+		view.backgroundColor = [CustomColors getColor:@"offWhiteColor"];
 		view.layer.cornerRadius = 10.0;
 		view.clipsToBounds = YES;
 		[self.contentView addSubview:view];
@@ -72,7 +72,7 @@
 {
 	if (!_practiceView) {
 		_practiceView = [[UIView alloc] initWithFrame:CGRectMake(10, 70, CGRectGetWidth(self.contentView.frame)-20, CGRectGetHeight(self.contentView.frame)-80)];
-		_practiceView.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1.0];
+		_practiceView.backgroundColor = [CustomColors getColor:@"offWhiteColor"];
 		UIButton *btn = [UIButton new];
 		btn.frame = CGRectMake(10, CGRectGetHeight(self.contentView.frame) - 150, CGRectGetWidth(self.contentView.frame)-20, 30);
 		[btn setTitle:@"Start Practice" forState:UIControlStateNormal];
@@ -113,10 +113,10 @@
 		[_flowView registerClass:[FlowCVCell class] forCellWithReuseIdentifier:@"Posture Cell"];
 		_flowView.layer.cornerRadius = 10.0;
 		[_flowView setClipsToBounds:YES];
-		UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-		lpgr.minimumPressDuration = 0.5;
-		lpgr.delegate = self;
-		[self.flowView addGestureRecognizer:lpgr];
+//		UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+//		lpgr.minimumPressDuration = 0.5;
+//		lpgr.delegate = self;
+//		[self.flowView addGestureRecognizer:lpgr];
 	}
 	return _flowView;
 }
