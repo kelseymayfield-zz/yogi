@@ -13,5 +13,5 @@
 @import QuartzCore;
 
 @interface FlowCVDataSource : NSObject<UICollectionViewDataSource>
-- (id)initWithPostures:(NSArray *)postures;
+- (id)initWithFlows:(NSArray *)flows;
 @end

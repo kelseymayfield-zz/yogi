@@ -124,7 +124,7 @@
 - (FlowCVDataSource *)flowDataSource
 {
 	if (!_flowDataSource) {
-		_flowDataSource = [[FlowCVDataSource alloc] initWithPostures:self.flows];
+		_flowDataSource = [[FlowCVDataSource alloc] initWithFlows:self.flows];
 	}
 	return _flowDataSource;
 }

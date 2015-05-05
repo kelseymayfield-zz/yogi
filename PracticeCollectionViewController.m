@@ -91,11 +91,15 @@
     // Pass the selected object to the new view controller.
 	if ([segue.destinationViewController isKindOfClass:[ViewController class]]) {
 		ViewController *vc = (ViewController *)segue.destinationViewController;
-//		NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
 		if ([sender isKindOfClass:[PracticeCollectionViewCell class]]) {
 			PracticeCollectionViewCell *cell = (PracticeCollectionViewCell *)sender;
+			NSMutableArray *practiceInfo = [NSMutableArray new];
 			NSArray *flows = cell.flows;
-			vc.practiceInfo = flows;
+			for (NSDictionary *flow in flows) {
+				NSArray *postures = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flow[@"name"] ofType:@"plist"]];
+				[practiceInfo addObjectsFromArray:postures];
+			}
+			vc.practiceInfo = practiceInfo;
 		}
 	}
 }

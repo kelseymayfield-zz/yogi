@@ -8,14 +8,14 @@
 
 #import "FlowCVDataSource.h"
 @interface FlowCVDataSource()
-@property (strong, nonatomic) NSArray *postures;
+@property (strong, nonatomic) NSArray *flows;
 @end
 @implementation FlowCVDataSource
 
-- (id)initWithPostures:(NSArray *)postures
+- (id)initWithFlows:(NSArray *)flows
 {
 	self = [super init];
-	self.postures = postures;
+	self.flows = flows;
 	return self;
 }
 
@@ -26,14 +26,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-	return [self.postures count];
+	return [self.flows count];
 }
 
 - (FlowCVCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	FlowCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];
 	
-	NSDictionary *dict = self.postures[indexPath.row];
+	NSDictionary *dict = self.flows[indexPath.row];
 	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
 	cell.imageView.backgroundColor = [CustomColors getColor:dict[@"color"]];
 
