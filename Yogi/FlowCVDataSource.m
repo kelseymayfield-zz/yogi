@@ -26,16 +26,22 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-	return [self.flows count];
+	if ([self.flows count])
+		return [self.flows count];
+	else return 1;
 }
 
 - (FlowCVCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	FlowCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Posture Cell" forIndexPath:indexPath];
 	
-	NSDictionary *dict = self.flows[indexPath.row];
-	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
-	cell.imageView.backgroundColor = [CustomColors getColor:dict[@"color"]];
+	if (self.flows.count) {
+		NSDictionary *dict = self.flows[indexPath.row];
+		cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
+		cell.imageView.backgroundColor = [CustomColors getColor:dict[@"color"]];
+	} else {
+		cell.imageView.image = [UIImage imageNamed:@"plus"];
+	}
 
 	cell.layer.cornerRadius = 5;
 	cell.clipsToBounds = YES;

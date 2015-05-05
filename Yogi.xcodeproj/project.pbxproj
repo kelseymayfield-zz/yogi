@@ -28,6 +28,7 @@
 		F0BE9F661AF8806A00CF1CCB /* CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F651AF8806A00CF1CCB /* CustomColors.m */; };
 		F0BE9F691AF8966B00CF1CCB /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F681AF8966B00CF1CCB /* ModalViewController.m */; };
 		F0BE9F6B1AF89B7600CF1CCB /* plow.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BE9F6A1AF89B7600CF1CCB /* plow.plist */; };
+		F0BE9F6E1AF913E800CF1CCB /* AddFlowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */; };
 		F0ED8B011AD8643100898BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B001AD8643100898BFE /* main.m */; };
 		F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B031AD8643100898BFE /* AppDelegate.m */; };
 		F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B091AD8643100898BFE /* ViewController.m */; };
@@ -84,6 +85,8 @@
 		F0BE9F671AF8966B00CF1CCB /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		F0BE9F681AF8966B00CF1CCB /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		F0BE9F6A1AF89B7600CF1CCB /* plow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plow.plist; sourceTree = "<group>"; };
+		F0BE9F6C1AF913E800CF1CCB /* AddFlowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFlowTableViewController.h; sourceTree = "<group>"; };
+		F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFlowTableViewController.m; sourceTree = "<group>"; };
 		F0ED8AFB1AD8643100898BFE /* Yogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8AFF1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B001AD8643100898BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				F019424C1AD87BF0003CF715 /* Posture.h */,
 				F019424D1AD87C3D003CF715 /* Posture.m */,
 				F0ED8B0B1AD8643100898BFE /* Main.storyboard */,
+				F0BE9F6C1AF913E800CF1CCB /* AddFlowTableViewController.h */,
+				F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */,
 				F09026811AE0612300F92889 /* PracticeCollectionViewCell.h */,
 				F09026821AE0612300F92889 /* PracticeCollectionViewCell.m */,
 				F0BE9F641AF8806A00CF1CCB /* CustomColors.h */,
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09026891AE0B04900F92889 /* PracticeCVDataSource.m in Sources */,
+				F0BE9F6E1AF913E800CF1CCB /* AddFlowTableViewController.m in Sources */,
 				F019424E1AD87C3D003CF715 /* Posture.m in Sources */,
 				F0BE9F691AF8966B00CF1CCB /* ModalViewController.m in Sources */,
 				F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */,
