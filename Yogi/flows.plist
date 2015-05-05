@@ -44,11 +44,19 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>bird of paradise </string>
+		<string>bird of paradise</string>
 		<key>color</key>
 		<string>greenColor</string>
 		<key>image</key>
 		<string>bird of paradise</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>plow</string>
+		<key>color</key>
+		<string>purpleColor</string>
+		<key>image</key>
+		<string>plow</string>
 	</dict>
 </array>
 </plist>

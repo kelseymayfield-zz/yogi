@@ -27,6 +27,7 @@
 		F0BE9F631AF874D400CF1CCB /* bird of paradise.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BE9F621AF874D400CF1CCB /* bird of paradise.plist */; };
 		F0BE9F661AF8806A00CF1CCB /* CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F651AF8806A00CF1CCB /* CustomColors.m */; };
 		F0BE9F691AF8966B00CF1CCB /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE9F681AF8966B00CF1CCB /* ModalViewController.m */; };
+		F0BE9F6B1AF89B7600CF1CCB /* plow.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BE9F6A1AF89B7600CF1CCB /* plow.plist */; };
 		F0ED8B011AD8643100898BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B001AD8643100898BFE /* main.m */; };
 		F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B031AD8643100898BFE /* AppDelegate.m */; };
 		F0ED8B0A1AD8643100898BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED8B091AD8643100898BFE /* ViewController.m */; };
@@ -82,6 +83,7 @@
 		F0BE9F651AF8806A00CF1CCB /* CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomColors.m; sourceTree = "<group>"; };
 		F0BE9F671AF8966B00CF1CCB /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		F0BE9F681AF8966B00CF1CCB /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		F0BE9F6A1AF89B7600CF1CCB /* plow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plow.plist; sourceTree = "<group>"; };
 		F0ED8AFB1AD8643100898BFE /* Yogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED8AFF1AD8643100898BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED8B001AD8643100898BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				F08DE3E51AE7F93D001B8320 /* Label Colors.plist */,
 				F083C8E01AF1E6EA002F3510 /* hand to toe pose.plist */,
 				F083C8E21AF2A955002F3510 /* flows.plist */,
+				F0BE9F6A1AF89B7600CF1CCB /* plow.plist */,
 				F083C8E61AF7E659002F3510 /* dandasana.plist */,
 				F083C8E41AF2AA03002F3510 /* warrior.plist */,
 			);
@@ -341,6 +344,7 @@
 				F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */,
 				F083C8E31AF2A955002F3510 /* flows.plist in Resources */,
 				F090268B1AE46D0F00F92889 /* sun salutation b.json in Resources */,
+				F0BE9F6B1AF89B7600CF1CCB /* plow.plist in Resources */,
 				F0ED8B0D1AD8643100898BFE /* Main.storyboard in Resources */,
 				F083C8E11AF1E6EA002F3510 /* hand to toe pose.plist in Resources */,
 				F083C8E51AF2AA03002F3510 /* warrior.plist in Resources */,
