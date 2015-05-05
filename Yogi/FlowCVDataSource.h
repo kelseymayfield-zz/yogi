@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FlowCVCell.h"
+#import "CustomColors.h"
 @import UIKit;
 @import QuartzCore;
 

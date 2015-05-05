@@ -35,6 +35,7 @@
 	
 	NSDictionary *dict = self.postures[indexPath.row];
 	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
+	cell.imageView.backgroundColor = [CustomColors getColor:dict[@"color"]];
 	cell.layer.cornerRadius = 5;
 	cell.clipsToBounds = YES;
 	return cell;
