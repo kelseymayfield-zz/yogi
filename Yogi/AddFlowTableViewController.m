@@ -12,6 +12,7 @@
 @property (strong, nonatomic) NSMutableArray *userFlows;
 @property (strong, nonatomic) NSArray *flows;
 @property (strong, nonatomic) NSMutableDictionary *flowGroups;
+@property (strong, nonatomic) NSIndexPath *expandedIndexPath;
 @end
 
 @implementation AddFlowTableViewController
@@ -162,6 +163,29 @@
 	
 	return YES;
 }
+
+/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[tableView beginUpdates];
+	if ([indexPath compare:self.expandedIndexPath] == NSOrderedSame) {
+		self.expandedIndexPath = nil;
+	} else {
+		self.expandedIndexPath = indexPath;
+	}
+	
+	[tableView endUpdates];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if ([indexPath compare:self.expandedIndexPath] == NSOrderedSame) {
+		return 100.0;
+	}
+	
+	return 44.0;
+}
+ */
 
 /*
 // Override to support conditional editing of the table view.
