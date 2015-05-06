@@ -96,7 +96,10 @@
 
 - (void)addFlows:(NSArray *)flows
 {
-	_flows = flows;
+	NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:[self.flows count] + [flows count]];
+	[array addObjectsFromArray:_flows];
+	[array addObjectsFromArray:flows];
+	_flows = array;
 }
 
 + (NSString *)reuseIdentifier

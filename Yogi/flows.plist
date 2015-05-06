@@ -20,19 +20,19 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>hand to toe pose</string>
-		<key>color</key>
-		<string>yellowColor</string>
-		<key>image</key>
-		<string>hand to toe</string>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>warrior</string>
 		<key>color</key>
 		<string>orangeColor</string>
 		<key>image</key>
 		<string>warrior i</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>hand to toe pose</string>
+		<key>color</key>
+		<string>yellowColor</string>
+		<key>image</key>
+		<string>hand to toe</string>
 	</dict>
 	<dict>
 		<key>name</key>

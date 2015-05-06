@@ -155,4 +155,12 @@
 	return [NSArray arrayWithArray:flows];
 }
 
+- (void)addPractice:(NSDictionary *)practice
+{
+	NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:_practices.count+1];
+	[array addObjectsFromArray:_practices];
+	[array addObject:practice];
+	_practices = [NSArray arrayWithArray:array];
+}
+
 @end

@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "CustomColors.h"
+#import "SwipeableCell.h"
+#import "PracticeCollectionViewController.h"
 
-@interface AddFlowTableViewController : UITableViewController
+@interface AddFlowTableViewController : UITableViewController<SwipeableCellDelegate>
 
 @end

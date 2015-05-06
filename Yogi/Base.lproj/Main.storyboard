@@ -135,19 +135,26 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Add Flow Cell" textLabel="Mmr-BJ-NdR" style="IBUITableViewCellStyleDefault" id="5js-mF-Eij">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Add Flow Cell" id="5js-mF-Eij" customClass="SwipeableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5js-mF-Eij" id="HKh-Fg-1Hn">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mmr-BJ-NdR">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-ST-DVl">
+                                            <rect key="frame" x="0.0" y="0.0" width="63" height="43"/>
+                                            <color key="backgroundColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Add">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didPressAddButton:" destination="5js-mF-Eij" eventType="touchUpInside" id="acF-fl-P7g"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="jhg-ST-DVl" id="apB-gk-ubY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -177,6 +184,7 @@
                         <outlet property="searchResultsDelegate" destination="KDP-VU-ydm" id="eDG-C9-AxP"/>
                     </connections>
                 </searchDisplayController>
+                <swipeGestureRecognizer direction="right" id="YtV-ll-iXP"/>
             </objects>
             <point key="canvasLocation" x="1121" y="1133"/>
         </scene>

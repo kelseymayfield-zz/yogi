@@ -9,6 +9,7 @@
 #import "AddFlowTableViewController.h"
 
 @interface AddFlowTableViewController ()
+@property (strong, nonatomic) NSMutableArray *userFlows;
 @property (strong, nonatomic) NSArray *flows;
 @property (strong, nonatomic) NSMutableDictionary *flowGroups;
 @end
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	_userFlows = [NSMutableArray new];
 	_flows = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"flows" ofType:@"plist"]];
 	_flowGroups = [NSMutableDictionary new];
 	[self sortFlows];
@@ -40,7 +42,6 @@
 			arr = _flowGroups[color];
 		}
 		[arr addObject:dict];
-		NSLog(@"%@", _flowGroups);
 	}
 }
 
@@ -65,9 +66,17 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Add Flow Cell" forIndexPath:indexPath];
+    SwipeableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Add Flow Cell" forIndexPath:indexPath];
     
     // Configure the cell...
+	UIButton *addButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, cell.frame.size.height)];
+	[addButton setTitle:@"Add" forState:UIControlStateNormal];
+	[addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	addButton.backgroundColor = [CustomColors greenColor];
+	[cell setButton:addButton WithButtonWidth:100.0];
+	NSLog(@"%@", cell.button.titleLabel.text);
+	cell.delegate = self;
+	
 	NSArray *keys = [self.flowGroups allKeys];
 	NSString *key = keys[indexPath.section];
 	NSArray *flows = self.flowGroups[key];
@@ -80,6 +89,79 @@
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	NSArray *keys = [self.flowGroups allKeys];
+	NSString *key = keys[section];
+	if ([key isEqualToString:@"redColor"]) {
+		return @"Warm up";
+	} else if ([key isEqualToString:@"orangeColor"]) {
+		return @"Primary series";
+	} else if ([key isEqualToString:@"yellowColor"]) {
+		return @"Intermediate series";
+	} else if ([key isEqualToString:@"greenColor"]) {
+		return @"Peak poses";
+	} else if ([key isEqualToString:@"blueColor"]) {
+		return @"Cool down";
+	} else {
+		return @"Final relaxation";
+	}
+}
+
+- (void)swipeableTableViewCell:(SwipeableCell *)cell scrollingToState:(CellState)state
+{
+	switch (state) {
+		case 0:
+			NSLog(@"utility buttons closed");
+			break;
+		case 1:
+			NSLog(@"left utility buttons open");
+			break;
+		default:
+			break;
+	}
+}
+
+- (void)swipeableTableViewCell:(SwipeableCell *)cell didTriggerLeftButtonWithIndex:(NSInteger)index
+{
+	switch (index) {
+		case 0:
+			NSLog(@"left button 0 was pressed");
+			NSDictionary *d = self.flows[[self.tableView indexPathForCell:cell].row];
+			[self.userFlows addObject:d];
+			break;
+//		case 1:
+//			NSLog(@"left button 1 was pressed");
+//			break;
+//		case 2:
+//			NSLog(@"left button 2 was pressed");
+//			break;
+//		case 3:
+//			NSLog(@"left btton 3 was pressed");
+//		default:
+//			break;
+	}
+}
+
+- (BOOL)swipeableTableViewCellShouldHideButtonOnSwipe:(SwipeableCell *)cell
+{
+	// allow just one cell's utility button to be open at once
+	return YES;
+}
+
+- (BOOL)swipeableTableViewCell:(SwipeableCell *)cell canSwipeToState:(CellState)state
+{
+	switch (state) {
+		case 1:
+			// set to NO to disable all left utility buttons appearing
+			return YES;
+			break;
+		default:
+			break;
+	}
+	
+	return YES;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -115,14 +197,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.destinationViewController isKindOfClass:[PracticeCollectionViewController class]]) {
+		PracticeCollectionViewController *vc = (PracticeCollectionViewController *)segue.destinationViewController;
+		[vc addFlows:self.userFlows];
+	}
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
 @end

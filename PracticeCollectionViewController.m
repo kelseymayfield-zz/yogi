@@ -76,10 +76,7 @@
 }
 
 - (void)receiveSelectFlowNotification:(NSNotification *)notification {
-	ModalViewController *mvc = [ModalViewController new];
-	[self presentViewController:mvc animated:YES completion:^{
-		
-	}];
+	
 }
 
 - (void)receiveDidExitNotification:(NSNotification *)notification {
@@ -95,6 +92,12 @@
 
 - (void)receiveNewFlowNotification:(NSNotification *)notification {
 	[self performSegueWithIdentifier:@"Add Flow Segue" sender:self];
+}
+
+- (void)addFlows:(NSArray *)flows
+{
+	PracticeCollectionViewCell *cell = (PracticeCollectionViewCell *)[self.dataSource collectionView:self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+	[cell addFlows:flows];
 }
 
 #pragma mark - Navigation

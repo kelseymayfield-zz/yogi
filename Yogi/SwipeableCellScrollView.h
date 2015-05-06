@@ -1,5 +1,5 @@
 //
-//  ModalViewController.h
+//  SwipeableCellScrollView.h
 //  Yogi
 //
 //  Created by Kelsey Mayfield on 5/5/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModalViewController : UIViewController
+@interface SwipeableCellScrollView : UIScrollView<UIGestureRecognizerDelegate>
 
 @end

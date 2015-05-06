@@ -21,4 +21,5 @@ typedef NS_ENUM(NSInteger, CardState) {
 -(CardState)cardStateAtIndexPath:(NSIndexPath *)indexPath;
 -(void)selectCardAtIndexPath:(NSIndexPath *)indexPath;
 -(NSArray *)practices;
+-(void)addPractice:(NSDictionary *)practice;
 @end
