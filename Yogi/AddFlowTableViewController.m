@@ -75,13 +75,17 @@
 	[addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	addButton.backgroundColor = [CustomColors greenColor];
 	[cell setButton:addButton WithButtonWidth:100.0];
-	NSLog(@"%@", cell.button.titleLabel.text);
 	cell.delegate = self;
+	
+	UIButton *accessoryButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
+	[accessoryButton setUserInteractionEnabled:NO];
+	cell.accessoryView = accessoryButton;
 	
 	NSArray *keys = [self.flowGroups allKeys];
 	NSString *key = keys[indexPath.section];
 	NSArray *flows = self.flowGroups[key];
 	NSDictionary *dict = flows[indexPath.row];
+	
 	cell.tintColor = [CustomColors purpleColor];
 	cell.textLabel.text = dict[@"name"];
 	cell.imageView.image = [UIImage imageNamed:dict[@"image"]];
