@@ -86,7 +86,6 @@
 		[_contentCellView addSubview:subview];
 	}
 	
-	NSLog(@"add constraints");
 	[self addConstraints:@[
 						   [NSLayoutConstraint constraintWithItem:self.cellScrollView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
 						   [NSLayoutConstraint constraintWithItem:self.cellScrollView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0],
@@ -409,9 +408,7 @@ static NSString * const kTableViewPanState = @"state";
 
 - (void)leftButtonHandler:(id)sender
 {
-	NSLog(@"left button handler");
 	if ([self.delegate respondsToSelector:@selector(swipeableTableViewCell:didTriggerLeftButtonWithIndex:)]) {
-		NSLog(@"HI");
 		[self.delegate swipeableTableViewCell:self didTriggerLeftButtonWithIndex:0];
 	}
 }

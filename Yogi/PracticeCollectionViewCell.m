@@ -21,6 +21,7 @@
 	self = [super initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
 	if (self) {
 		UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
+
 		view.backgroundColor = [CustomColors getColor:@"offWhiteColor"];
 		view.layer.cornerRadius = 10.0;
 		view.clipsToBounds = YES;
@@ -38,6 +39,16 @@
 	}
 	
 	return self;
+}
+
+- (void)setButtonLabel:(NSString *)label
+{
+	UIButton *btn = [UIButton new];
+	btn.frame = CGRectMake(10, CGRectGetHeight(self.contentView.frame) - 150, CGRectGetWidth(self.contentView.frame)-20, 30);
+	[btn setTitle:label forState:UIControlStateNormal];
+	[btn setTitleColor:self.contentView.tintColor forState:UIControlStateNormal];
+	[btn addTarget:self action:@selector(didPressStartButton:) forControlEvents:UIControlEventTouchUpInside];
+	[self.practiceView addSubview:btn];
 }
 
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color
@@ -73,12 +84,7 @@
 	if (!_practiceView) {
 		_practiceView = [[UIView alloc] initWithFrame:CGRectMake(10, 70, CGRectGetWidth(self.contentView.frame)-20, CGRectGetHeight(self.contentView.frame)-80)];
 		_practiceView.backgroundColor = [CustomColors getColor:@"offWhiteColor"];
-		UIButton *btn = [UIButton new];
-		btn.frame = CGRectMake(10, CGRectGetHeight(self.contentView.frame) - 150, CGRectGetWidth(self.contentView.frame)-20, 30);
-		[btn setTitle:@"Start Practice" forState:UIControlStateNormal];
-		[btn setTitleColor:self.contentView.tintColor forState:UIControlStateNormal];
-		[btn addTarget:self action:@selector(didPressStartButton:) forControlEvents:UIControlEventTouchUpInside];
-		[_practiceView addSubview:btn];
+		
 		[_practiceView addSubview:self.flowView];
 	}
 	return _practiceView;

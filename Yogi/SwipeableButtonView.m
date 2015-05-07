@@ -65,7 +65,6 @@
 
 - (void)pushBackgroundColor
 {
-	NSLog(@"%@", self.button);
 	self.backgroundColor = self.button.backgroundColor;
 }
 

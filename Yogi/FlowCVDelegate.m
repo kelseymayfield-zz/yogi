@@ -16,7 +16,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"New flow" object:self];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"Select icon" object:self userInfo:@{@"row":[NSNumber numberWithInteger:indexPath.row]}];
 
 }
 @end

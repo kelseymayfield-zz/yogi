@@ -12,6 +12,7 @@
 @interface PracticeCollectionViewController ()
 @property (strong, nonatomic) PracticeCVLayout *layout;
 @property (strong, nonatomic) PracticeCVDataSource *dataSource;
+@property (nonatomic) NSInteger selectedIndex;
 @end
 
 @implementation PracticeCollectionViewController
@@ -19,15 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+	_selectedIndex = -1;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveStartPracticeNotification:) name:@"Start Practice Notification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveStartEditingNotification:) name:@"Start Editing Notification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveDidExitNotification:) name:@"Did Exit Notification" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveSelectFlowNotification:) name:@"Select Flow Notification" object:nil];
 	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNewFlowNotification:) name:@"New flow" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNewFlowNotification:) name:@"Select icon" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveSelectCardNotification:) name:@"Select Card" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveDeselectCardNotification:) name:@"Deselect Card" object:nil];
+	
     
     // Set data source
 	 _dataSource = [[PracticeCVDataSource alloc] init];
@@ -45,7 +48,22 @@
 	
 	// Register cell classes
 	[self.collectionView registerClass:[PracticeCollectionViewCell class] forCellWithReuseIdentifier:[PracticeCollectionViewCell reuseIdentifier]];
+	
+	self.clearsSelectionOnViewWillAppear = NO;
 }
+
+/*
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	if (_selectedIndex > 0) {
+		NSLog(@"selected thingy tho %ld", [self.dataSource cardStateAtIndexPath:[NSIndexPath indexPathForItem:_selectedIndex inSection:0]]);
+		
+		[self.layout invalidateLayout];
+	}
+	
+}
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -91,7 +109,20 @@
 }
 
 - (void)receiveNewFlowNotification:(NSNotification *)notification {
-	[self performSegueWithIdentifier:@"Add Flow Segue" sender:self];
+	if (_selectedIndex == 0) {
+		[self performSegueWithIdentifier:@"Add Flow Segue" sender:self];
+	} else if (_selectedIndex > 0){
+		[self performSegueWithIdentifier:@"Flow Detail Segue" sender:self];
+	}
+	
+}
+
+- (void)receiveSelectCardNotification:(NSNotification *)notification {
+	_selectedIndex = [notification.userInfo[@"row"] integerValue];
+}
+
+- (void)receiveDeselectCardNotification:(NSNotification *)notification{
+	_selectedIndex = -1;
 }
 
 - (void)addFlows:(NSArray *)flows
@@ -106,19 +137,26 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-	if ([segue.destinationViewController isKindOfClass:[ViewController class]]) {
-		ViewController *vc = (ViewController *)segue.destinationViewController;
-		if ([sender isKindOfClass:[PracticeCollectionViewCell class]]) {
-			PracticeCollectionViewCell *cell = (PracticeCollectionViewCell *)sender;
-			NSMutableArray *practiceInfo = [NSMutableArray new];
-			NSArray *flows = cell.flows;
-			for (NSDictionary *flow in flows) {
-				NSArray *postures = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flow[@"name"] ofType:@"plist"]];
-				[practiceInfo addObjectsFromArray:postures];
-			}
+	if ([sender isKindOfClass:[PracticeCollectionViewCell class]]) {
+		PracticeCollectionViewCell *cell = (PracticeCollectionViewCell *)sender;
+		NSMutableArray *practiceInfo = [NSMutableArray new];
+		NSArray *flows = cell.flows;
+		for (NSDictionary *flow in flows) {
+			NSArray *postures = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:flow[@"name"] ofType:@"plist"]];
+			[practiceInfo addObjectsFromArray:postures];
+		}
+		if ([segue.destinationViewController isKindOfClass:[ViewController class]]) {
+			ViewController *vc = (ViewController *)segue.destinationViewController;
+				
 			vc.practiceInfo = practiceInfo;
 		}
+	} else if ([segue.destinationViewController isKindOfClass:[FlowDetailTableViewController class]]) {
+		FlowDetailTableViewController *tvc = (FlowDetailTableViewController *)segue.destinationViewController;
+//		tvc.flows = self.dataSource.practices[_selectedIndex];
+		PracticeCollectionViewCell *cell = (PracticeCollectionViewCell *)[self.dataSource collectionView:self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:_selectedIndex inSection:0]];
+		tvc.flows = cell.flows;
 	}
+	
 }
 
 /*

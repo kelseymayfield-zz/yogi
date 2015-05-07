@@ -49,11 +49,13 @@
 	switch (cardState) {
 		case CardState_Normal:
 			[self collapseRows:indexPath.row];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"Select Card" object:self userInfo:@{@"row":[NSNumber numberWithInteger:indexPath.row]}];
 			break;
 			
 		case CardState_Selected:
 		case CardState_Collapsed:
 			[self expandRows];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"Deselect Card" object:self];
 		default:
 			break;
 	}
@@ -112,8 +114,10 @@
 	
 	if (indexPath.row == 0) {
 		cell.hasLabel = NO;
+		[cell setButtonLabel:@"Save Practice"];
 	} else {
 		cell.hasLabel = YES;
+		[cell setButtonLabel:@"Start Practice"];
 	}
 	
 	NSDictionary *dict = self.practices[indexPath.row];

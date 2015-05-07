@@ -16,6 +16,7 @@
 @interface PracticeCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate, UITextFieldDelegate>
 - (void)setLabel:(NSString *)label withColor:(UIColor *)color;
 - (void)addFlows:(NSArray *)flows;
+- (void)setButtonLabel:(NSString *)label;
 + (NSString *)reuseIdentifier;
 @property (strong, nonatomic) UIView *practiceView;
 @property (nonatomic) BOOL hasLabel;

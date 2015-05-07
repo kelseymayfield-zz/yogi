@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0104C861AFBA0F100DF44DD /* FlowDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0104C851AFBA0F100DF44DD /* FlowDetailTableViewController.m */; };
 		F019424E1AD87C3D003CF715 /* Posture.m in Sources */ = {isa = PBXBuildFile; fileRef = F019424D1AD87C3D003CF715 /* Posture.m */; };
 		F02EC6791ADB3927005A24C2 /* sun salutation a.json in Resources */ = {isa = PBXBuildFile; fileRef = F02EC6781ADB3927005A24C2 /* sun salutation a.json */; };
 		F07B1AA31AEDA0B700CAD89C /* FlowCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B1AA21AEDA0B700CAD89C /* FlowCVDataSource.m */; };
@@ -57,6 +58,8 @@
 		5E2A3B2C872A7EB86398E9D7 /* Pods_Yogi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yogi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95277365D9E67C42E29A8BD0 /* Pods-Yogi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yogi/Pods-Yogi.release.xcconfig"; sourceTree = "<group>"; };
 		BE039ABB00EF3C832ADC9749 /* Pods-Yogi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yogi/Pods-Yogi.debug.xcconfig"; sourceTree = "<group>"; };
+		F0104C841AFBA0F100DF44DD /* FlowDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDetailTableViewController.h; sourceTree = "<group>"; };
+		F0104C851AFBA0F100DF44DD /* FlowDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowDetailTableViewController.m; sourceTree = "<group>"; };
 		F019424C1AD87BF0003CF715 /* Posture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Posture.h; sourceTree = "<group>"; };
 		F019424D1AD87C3D003CF715 /* Posture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Posture.m; sourceTree = "<group>"; };
 		F02EC6781ADB3927005A24C2 /* sun salutation a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sun salutation a.json"; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				F0ED8B091AD8643100898BFE /* ViewController.m */,
 				F0BE9F6C1AF913E800CF1CCB /* AddFlowTableViewController.h */,
 				F0BE9F6D1AF913E800CF1CCB /* AddFlowTableViewController.m */,
+				F0104C841AFBA0F100DF44DD /* FlowDetailTableViewController.h */,
+				F0104C851AFBA0F100DF44DD /* FlowDetailTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				F0BE9F6E1AF913E800CF1CCB /* AddFlowTableViewController.m in Sources */,
 				F019424E1AD87C3D003CF715 /* Posture.m in Sources */,
 				F09026831AE0612300F92889 /* PracticeCollectionViewCell.m in Sources */,
+				F0104C861AFBA0F100DF44DD /* FlowDetailTableViewController.m in Sources */,
 				F0BE9F771AF9507A00CF1CCB /* SwipeableButtonView.m in Sources */,
 				F0ED8B041AD8643100898BFE /* AppDelegate.m in Sources */,
 				F09026861AE0636D00F92889 /* PracticeCVLayout.m in Sources */,

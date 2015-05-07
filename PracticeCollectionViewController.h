@@ -10,6 +10,7 @@
 #import "PracticeCVDataSource.h"
 #import "PracticeCVLayout.h"
 #import "PracticeCollectionViewCell.h"
+#import "FlowDetailTableViewController.h"
 
 @interface PracticeCollectionViewController : UICollectionViewController
 - (void)addFlows:(NSArray *)flows;
